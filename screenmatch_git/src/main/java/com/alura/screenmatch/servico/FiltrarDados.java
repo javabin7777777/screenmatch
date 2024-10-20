@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class ConverterDados implements IConverterDados {
+public class FiltrarDados implements IFiltrarDados {
 	private ObjectMapper conversor = new ObjectMapper();
 
 	@Override

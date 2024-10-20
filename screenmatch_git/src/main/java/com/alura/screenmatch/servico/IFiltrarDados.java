@@ -1,6 +1,6 @@
 package com.alura.screenmatch.servico;
 
-public interface IConverterDados {
+public interface IFiltrarDados {
 	<T> T obterDados(String strJson, Class<T> classe);	
 }
 
