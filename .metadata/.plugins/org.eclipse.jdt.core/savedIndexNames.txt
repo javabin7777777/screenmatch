@@ -1,2 +1,0 @@
-INDEX VERSION 1.134+C:\GitHubjavabin7777777\screenmatch-springboot-github\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
