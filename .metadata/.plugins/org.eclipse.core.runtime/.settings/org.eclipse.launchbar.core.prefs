@@ -1,11 +1,13 @@
 LaunchTargetManager/configs/ScreenmatchApplication=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/SpringApplication=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/screenmatch_git=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 configDescList=org.eclipse.launchbar.core.descriptorType.default\:screenmatch_git,org.eclipse.launchbar.core.descriptorType.default\:SpringApplication,org.eclipse.launchbar.core.descriptorType.default\:ScreenmatchApplication
 eclipse.preferences.version=1
-org.eclipse.launchbar.core.descriptorType.default\:ScreenmatchApplication/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:ScreenmatchApplication/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:ScreenmatchApplication/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:SpringApplication/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:SpringApplication/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:screenmatch_git/activeLaunchMode=debug
