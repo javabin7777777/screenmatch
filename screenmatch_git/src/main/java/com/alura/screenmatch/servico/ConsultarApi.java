@@ -20,9 +20,7 @@ public class ConsultarApi {
 	        throw new RuntimeException(e);
 	    } catch (InterruptedException e) {
 	        throw new RuntimeException(e);
-	    }
-
-	    String json = response.body();
-	    return json;
+	    }	    
+	    return response.body();
 	}
 }
