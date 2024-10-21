@@ -10,11 +10,11 @@ import com.alura.screenmatch.model.DadosTemporada;
 import com.alura.screenmatch.servico.ConsultarApi;
 import com.alura.screenmatch.servico.FiltrarDados;
 
-//endereço modelo: https://www.omdbapi.com/?t=gilmore+girls&season="+1+"&apikey=7b2e1910f"
+//endereço modelo: https://www.omdbapi.com/?t=gilmore+girls&season="+1+"&apikey=7b2e19101f"
 
 public class ItensUteis {
 	private static final String end_1 = "https://www.omdbapi.com/?t=";
-	private static final String end_2 = "&apikey=7b2e1910f";
+	private static final String end_2 = "&apikey=7b2e19101f";
 	private static final String end_3 = "&season=";
 
 	// Buscar todas temporadas de uma série(no caso,entrada pelo usuário) na api omdb.
