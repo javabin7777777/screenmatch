@@ -1,11 +1,13 @@
 package com.alura.screenmatch;
 
+import java.util.List;
 import java.util.Scanner;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.alura.screenmatch.model.Episodio;
 import com.alura.screenmatch.servico.ConsultarApi;
 import com.alura.screenmatch.servico.FiltrarDados;
 import com.alura.screenmatch.utilidades.ItensUteis;
@@ -25,8 +27,12 @@ public class ScreenmatchApplication implements CommandLineRunner {
 		String nomeDaSerie = ler.nextLine();
 		var consultaApi = new ConsultarApi();
 		FiltrarDados filtro = new FiltrarDados();
-		ItensUteis.ObterTemporadasDaSerie(nomeDaSerie, filtro, consultaApi);
-		ler.close();		
+		List<Episodio> listaDeEpisodios = ItensUteis.buscarEpisodios(nomeDaSerie, filtro, consultaApi);		
+		System.out.println("Entre com nome o ano da série que você quer: ".toUpperCase());
+		int ano = ler.nextInt();
+		ler.nextLine();
+		ItensUteis.obterEpisodiosPorDataLancamento(ano, listaDeEpisodios ).forEach(System.out::println);
+		ler.close();
 		
 	}
 
