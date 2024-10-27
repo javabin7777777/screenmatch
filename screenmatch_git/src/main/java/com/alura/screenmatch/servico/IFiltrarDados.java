@@ -8,5 +8,5 @@ public interface IFiltrarDados {
 /* 
  * String strJson -> String no formato Json(serial) que será convertida para objeto java conforme 
  * classe DadosDaSerie do pacote model.
- * Class<T> classe -> objeto java que recebe o resultado da conversão.
+ * Class<T> classe -> objeto java para o qual será convertida.
  */

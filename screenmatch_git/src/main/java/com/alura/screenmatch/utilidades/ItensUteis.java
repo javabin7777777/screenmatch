@@ -16,7 +16,7 @@ import com.alura.screenmatch.servico.FiltrarDados;
 
 public class ItensUteis {
 	private static final String end_1 = "https://www.omdbapi.com/?t=";
-	private static final String end_2 = "&apikey=7b2e191f";
+	private static final String end_2 = "&apikey=7b2e19101f";
 	private static final String end_3 = "&season=";
 
 	// Buscar todas temporadas de uma série(no caso,entrada pelo usuário) na api
@@ -31,19 +31,37 @@ public class ItensUteis {
 		enderecoDeBusca = end_1.concat(nomeDaSerie).concat(end_2);
 		// System.out.println(enderecoDeBusca);
 		str = buscarNaApi.obterDados(enderecoDeBusca); // Devolve uma string Json.
-		System.out.println("\nstring json dos dados da série ".toUpperCase() + strAux.toUpperCase() + ":\n" + str);
+		//System.out.println("\nstring json dos dados da série ".toUpperCase() + strAux.toUpperCase() + ":\n" + str);
 
-		// dadosSerie contém,entre outras,a quantidade de temporadas.
+		// dadosSerie contém,entre outras,o total de temporadas.
 		DadosDaSerie dadosSerie = filtro.obterDados(str, DadosDaSerie.class);
+		//DadosEpisodio ep = new DadosEpisodio("", -1, -1, "", "");
 
-		System.out.println("\ndados filtrados da série ".toUpperCase() + strAux.toUpperCase() + ":\n" + dadosSerie);
+		//System.out.println("\ndados filtrados da série ".toUpperCase() + strAux.toUpperCase() + ":\n" + dadosSerie);
 		enderecoDeBusca = end_1.concat(nomeDaSerie).concat(end_3);
 		// System.out.println(enderecoDeBusca);
 		for (int i = 1; i < (dadosSerie.totalTemporadas() + 1); i++) {
 			str = buscarNaApi.obterDados(enderecoDeBusca.concat(String.valueOf(i)).concat(end_2));
-			DadosTemporada dadosTemporadas = filtro.obterDados(str, DadosTemporada.class);
+			DadosTemporada dadosTemporadas = filtro.obterDados(str, DadosTemporada.class);		
 			temporadas.add(dadosTemporadas);
 		}
+		
+		System.out.println("\n\n>>>>>>>>> temporadas da série ".toUpperCase()+strAux.toUpperCase()+" <<<<<<<<<\n"); 
+		temporadas.forEach(System.out::println);
+		System.out.println();
+		
+		return temporadas;
+		
+		/*
+		System.out.println("\n<<<<<<<<<<<<<<<<<<temporadas>>>>>>>>>>>>>>>>>>>>>>>>>>>S\n".toUpperCase());
+		for(int i=0; i < temporadas.size(); i++) {
+			System.out.println();
+			System.out.println(temporadas.get(i).episodios());
+		}
+		System.out.println("\n");
+		
+		temporadas.forEach((temp)-> {System.out.println();System.out.println(temp);});
+		*/
 		/*
 		 * System.out.println("\n\n>>>>>>>>> temporadas da série ".toUpperCase()+strAux.
 		 * toUpperCase()+" <<<<<<<<<\n"); temporadas.forEach(System.out::println);
@@ -58,49 +76,54 @@ public class ItensUteis {
 		 * List<DadosEpisodio> temp = temporadas.get(i).episodios(); for(int x = 0; x <
 		 * temp.size(); x++ ) { System.out.println(temp.get(x).Titulo()); } }
 		 */
-		return temporadas;
+		
 	}
 
 	public static List<Episodio> buscarEpisodios(String nomeDaSerie, FiltrarDados filtro, ConsultarApi buscarNaApi) {
 
 		List<DadosTemporada> temporadas = ObterTemporadasDaSerie(nomeDaSerie, filtro, buscarNaApi);
-		String strAux = nomeDaSerie;
-
-		System.out.println("\n>>>>>>>> episódios,de todas temporadas da série ".toUpperCase() + strAux.toUpperCase()
-				+ " <<<<<<<<\n");
-
-		// Obter lista de episodios de todas temporadas.
+		// Obter a lista de episodios.
 		List<DadosEpisodio> listaDeEpisodios = temporadas.stream()
 				.flatMap((temporada) -> temporada.episodios().stream()).collect(Collectors.toList());
-
-		listaDeEpisodios.forEach(System.out::println);
-
+		
+		System.out.println("\n>>>>>>>> os episódios,e a temporada em que eles estão,da série ".toUpperCase()
+				+ nomeDaSerie.toUpperCase() + " <<<<<<<<\n");
+		
+		/*Conversão da listaDeEpisodios(DadosEpisodio) para lista episodios(Episodio),para que possa ser inserido o
+		 *  numero da temporada do episodio,resultando em uma nova lista de objetos,pois,os atributos da listaDeEpisodios são todos 
+		 *  'final',pelo fato de serem oriundos de uma classe tipo 'record'.Esta última não possui setters,somente getters.
+		 */
+		List<Episodio> episodios = temporadas.stream()
+				.flatMap(temporada -> temporada.episodios().stream()
+				.map(episodio -> new Episodio(temporada.numeroTemporada(), episodio)))
+				.collect(Collectors.toList());
+		episodios.forEach(System.out::println);
+		
+		//System.out.println("lista de episódios: \n".toUpperCase()+episodios);
+		
 		// Obter os cincos episódios de melhor avaliação de uma série.
 		System.out.println("\n>>>>>>>> os cincos melhores episódios,de todas temporadas da série ".toUpperCase()
-				+ strAux.toUpperCase() + " <<<<<<<<\n");
-
-		// Há episodios com avaliacao N/A .
-		listaDeEpisodios.stream().filter((episodio) -> !episodio.avaliacao().equalsIgnoreCase("n/a"))
+				+ nomeDaSerie.toUpperCase() + " <<<<<<<<\n");		
+		System.out.println(episodios.stream().sorted(Comparator.comparing(Episodio::getAvaliacao).reversed()).limit(5)+"\n");		
+		episodios.stream().sorted(Comparator.comparing(Episodio::getAvaliacao).reversed()).limit(5)
+		.forEach(System.out::println);
+		
+		// Obter os cincos episódios de melhor avaliação de uma série.
+		System.out.println("\n>>>>>>>> os cincos melhores episódios,de todas temporadas da série ".toUpperCase()
+				+ nomeDaSerie.toUpperCase() + " <<<<<<<<\n");		
+		listaDeEpisodios.stream().filter((episodio) -> !episodio.avaliacao().equalsIgnoreCase("n/a")) // Há episodios com avaliacao N/A .
 				.sorted(Comparator.comparing(DadosEpisodio::avaliacao).reversed()).limit(5)
 				.forEach(System.out::println);
 
-		System.out.println("\n>>>>>>>> os episódios,e a temporada em que eles estão,da série ".toUpperCase()
-				+ strAux.toUpperCase() + " <<<<<<<<\n");
-
-		List<Episodio> episodios = temporadas.stream()
-				.flatMap(temporada -> temporada.episodios().stream()
-						.map(episodio -> new Episodio(temporada.numeroTemporada(), episodio)))
-				.collect(Collectors.toList());
-
-		episodios.forEach(System.out::println);
+		return episodios; // Lista com todos episodios de todas temporadas de uma serie.
 
 		// collect(Collectors.toList()) -> cria uma lista mutável
-		// toList() -> cria uma lista imutável..
-
-		return episodios; // Lista com todos episodios de todas temporadas de uma serie.
+		// toList() -> cria uma lista imutável..		
+		
+		
 	}
 
-	public static List<Episodio> obterEpisodiosPorDataLancamento(int ano, List<Episodio> listaDeEpisodios) {
+	public static List<Episodio> buscarEpisodiosPorDataLancamento(int ano, List<Episodio> listaDeEpisodios) {
 
 	//	List<Episodio> listaDeEpisodios = buscarEpisodios(nomeDaSerie, filtro, buscarNaApi);
 		LocalDate data = LocalDate.of(ano, 1, 1);
@@ -115,20 +138,28 @@ public class ItensUteis {
 }
 
 /*
+		System.out.println("\n>>>>>>>> episódios,de todas temporadas da série ".toUpperCase() + strAux.toUpperCase()
+				+ " <<<<<<<<\n");
+		// Obter lista de episodios de todas temporadas.
+		
+		listaDeEpisodios.forEach(System.out::println);
+	
+ * 
  * episodio.getDataLancamento() != null -> para o caso vier data com N/A que
  * será atribuído 'null' na classe Episodio. 
- * isAfter(data) -> o que está depois
- * de data. collect(Collectors.toList()) -> produz uma lista mutável. toList()
- * -> produz uma lista imutável.
+ * isAfter(data) -> o que está depois de data. collect(Collectors.toList()) -> produz uma lista mutável. 
+ * toList() -> produz uma lista imutável.
  */
 //Scanner ler = new Scanner(System.in);
 /*
  * System.out.println("\nEntre com nome da série que você quer: "); String
  * nomeDaSerie = ler.nextLine(); String enderecoDeBusca =
- * end_1.concat(nomeDaSerie.replace(" ", "+")).concat(end_2); var buscarNaApi =
- * new ConsultarApi(); String str = buscarNaApi.obterDados(enderecoDeBusca); //
- * Devolve uma string Json. System.out.println("\n str\n\n"); ConverterDados
- * converter = new ConverterDados();*
+ * end_1.concat(nomeDaSerie.replace(" ", "+")).concat(end_2);
+ *  var buscarNaApi = new ConsultarApi(); 
+ *  String str = buscarNaApi.obterDados(enderecoDeBusca); //
+ * Devolve uma string Json. 
+ * System.out.println("\n str\n\n"); 
+ * ConverterDados converter = new ConverterDados();*
  */
 
 /*

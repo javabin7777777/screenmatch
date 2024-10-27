@@ -28,10 +28,10 @@ public class ScreenmatchApplication implements CommandLineRunner {
 		var consultaApi = new ConsultarApi();
 		FiltrarDados filtro = new FiltrarDados();
 		List<Episodio> listaDeEpisodios = ItensUteis.buscarEpisodios(nomeDaSerie, filtro, consultaApi);		
-		System.out.println("Entre com nome o ano da série que você quer: ".toUpperCase());
+		System.out.println("\nEntre com o ano da série que você quer: ".toUpperCase());
 		int ano = ler.nextInt();
 		ler.nextLine();
-		ItensUteis.obterEpisodiosPorDataLancamento(ano, listaDeEpisodios ).forEach(System.out::println);
+		ItensUteis.buscarEpisodiosPorDataLancamento(ano, listaDeEpisodios ).forEach(System.out::println);
 		ler.close();
 		
 	}

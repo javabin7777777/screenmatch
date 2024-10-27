@@ -23,4 +23,4 @@ public class FiltrarDados implements IFiltrarDados {
 	}
 }
 
-/* converter fromJson para objeto java,faz uso da classe  ObjectMapper*/
+/* converter fromJson para objeto java(USO DA RECORD),faz uso da classe  ObjectMapper*/
