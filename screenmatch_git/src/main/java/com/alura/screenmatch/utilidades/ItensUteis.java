@@ -1,10 +1,13 @@
 package com.alura.screenmatch.utilidades;
 
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -16,11 +19,11 @@ import com.alura.screenmatch.model.Episodio;
 import com.alura.screenmatch.servico.ConsultarApi;
 import com.alura.screenmatch.servico.FiltrarDados;
 
-//endereço modelo: https://www.omdbapi.com/?t=gilmore+girls&season="+1+"&apikey=7b2e191f"
+//endereço modelo: https://www.omdbapi.com/?t=gilmore+girls&season="+1+"&apikey=7b2e19101f"
 
 public class ItensUteis {
 	private static final String end_1 = "https://www.omdbapi.com/?t=";
-	private static final String end_2 = "&apikey=7b2e191f";
+	private static final String end_2 = "&apikey=7b2e19101f";
 	private static final String end_3 = "&season=";
 
 	
@@ -137,12 +140,12 @@ public class ItensUteis {
 	public static List<Episodio> buscarEpisodiosPorDataLancamento(int ano, List<Episodio> listaDeEpisodios) {
 
 	//	List<Episodio> listaDeEpisodios = buscarEpisodios(nomeDaSerie, filtro, buscarNaApi);
-		LocalDate data = LocalDate.of(ano, 1, 1);
+		LocalDate data = LocalDate.of(ano, 1, 1);	
 		System.out.println("\ndata entrada: ".toUpperCase() + data + "\n");
 		List<Episodio> listaEpisodioPorDataLancamento = listaDeEpisodios.stream()
-				.filter(episodio -> episodio.getDataLancamento().isAfter(data) && episodio.getDataLancamento() != null)
+				.filter(episodio ->  episodio.getDataLancamento() != null && episodio.getDataLancamento().isAfter(data))
 				.collect(Collectors.toList());
-
+		//System.out.println("Lista por data de lançamento: "+listaEpisodioPorDataLancamento);
 		return listaEpisodioPorDataLancamento;
 
 	}
@@ -160,7 +163,8 @@ public class ItensUteis {
 	}
 	
 	public static Map<Integer,Double> obterMediaDaAvaliacaoDeCadaTemporada (List<Episodio> episodios) {
-		DecimalFormat f = new DecimalFormat("##.####");
+		var Simbolo = new DecimalFormatSymbols(Locale.ENGLISH);		
+		DecimalFormat f = new DecimalFormat("##.####",Simbolo);
 		Map<Integer,Double> avaliacaoPorTemporada = 
 				episodios.stream().filter(elemento -> elemento.getAvaliacao() > 0.0)
 				.collect(Collectors.groupingBy(Episodio::getNumeroDaTemporada,
@@ -169,7 +173,8 @@ public class ItensUteis {
 		// Aproximação dos valores das médias.
 		for(Integer chave: avaliacaoPorTemporada.keySet()) {
 			//System.out.println(avaliacaoPorTemporada.get(chave));
-			Double media = Double.parseDouble(f.format(avaliacaoPorTemporada.get(chave)).replace(",","."));			
+			//Double media = Double.parseDouble(f.format(avaliacaoPorTemporada.get(chave)).replace(",","."));
+			Double media = Double.parseDouble(f.format(avaliacaoPorTemporada.get(chave)));	
 			avaliacaoPorTemporada.put(chave,media);
 		}	
 		

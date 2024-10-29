@@ -14,9 +14,11 @@ public class Episodio {
 		this.numeroDaTemporada = numeroDaTemporada;
 		Titulo = episodios.Titulo();
 		this.numeroEpisodio = episodios.numeroEpisodio();
+		//System.out.println("aqui"+episodios.dataLancamento());
 		
 		try {
 			this.dataLancamento = LocalDate.parse(episodios.dataLancamento());
+			//System.out.println("aqui-"+this.dataLancamento);
 		} catch (DateTimeParseException ex) {
 			this.dataLancamento = null;
 		}
