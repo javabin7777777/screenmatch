@@ -32,6 +32,11 @@ public class ScreenmatchApplication implements CommandLineRunner {
 		int ano = ler.nextInt();
 		ler.nextLine();
 		ItensUteis.buscarEpisodiosPorDataLancamento(ano, listaDeEpisodios ).forEach(System.out::println);
+		System.out.println("\nEntre com o título do episódio: ".toUpperCase());
+		var titulo = ler.nextLine();
+		ItensUteis.encontrarEpisodio(listaDeEpisodios, titulo);
+		System.out.println("\n>>>>>>>>>>>>>>>>>>> média da avaliação das temporadas <<<<<<<<<<<<<<<<<<<<\n".toUpperCase());
+		System.out.println(ItensUteis.obterMediaDaAvaliacaoDeCadaTemporada(listaDeEpisodios));
 		ler.close();
 		
 	}

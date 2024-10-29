@@ -1,10 +1,14 @@
 package com.alura.screenmatch.utilidades;
 
+import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
+
 import com.alura.screenmatch.model.DadosDaSerie;
 import com.alura.screenmatch.model.DadosEpisodio;
 import com.alura.screenmatch.model.DadosTemporada;
@@ -12,12 +16,19 @@ import com.alura.screenmatch.model.Episodio;
 import com.alura.screenmatch.servico.ConsultarApi;
 import com.alura.screenmatch.servico.FiltrarDados;
 
-//endereço modelo: https://www.omdbapi.com/?t=gilmore+girls&season="+1+"&apikey=7b2e19101f"
+//endereço modelo: https://www.omdbapi.com/?t=gilmore+girls&season="+1+"&apikey=7b2e191f"
 
 public class ItensUteis {
 	private static final String end_1 = "https://www.omdbapi.com/?t=";
-	private static final String end_2 = "&apikey=7b2e19101f";
+	private static final String end_2 = "&apikey=7b2e191f";
 	private static final String end_3 = "&season=";
+
+	
+	@Override
+	public String toString() {
+		return "ItensUteis [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
+	}
 
 	// Buscar todas temporadas de uma série(no caso,entrada pelo usuário) na api
 	// omdb.
@@ -135,7 +146,37 @@ public class ItensUteis {
 		return listaEpisodioPorDataLancamento;
 
 	}
+	
+	public static void encontrarEpisodio(List<Episodio> listaDeEpisodios, String titulo) {
+		Optional<Episodio> episodioEncontrado = listaDeEpisodios.stream().filter(elemento -> elemento.getTitulo()
+				.toUpperCase().contains(titulo.toUpperCase())).findFirst();// Encontra a primeira ocorrência.
+		if(episodioEncontrado.isPresent()) {
+			System.out.println("\n"+episodioEncontrado.get().getTitulo()+" encontrado na temporada - "
+								.toUpperCase()+episodioEncontrado.get().getNumeroDaTemporada());
+			
+			System.out.println("\ntitulo encontrado: ".toUpperCase()+episodioEncontrado);
+		}else 
+			System.out.println("\ntitulo não encontrado: ".toUpperCase());
+	}
+	
+	public static Map<Integer,Double> obterMediaDaAvaliacaoDeCadaTemporada (List<Episodio> episodios) {
+		DecimalFormat f = new DecimalFormat("##.####");
+		Map<Integer,Double> avaliacaoPorTemporada = 
+				episodios.stream().filter(elemento -> elemento.getAvaliacao() > 0.0)
+				.collect(Collectors.groupingBy(Episodio::getNumeroDaTemporada,
+				Collectors.averagingDouble(Episodio::getAvaliacao)));
+		
+		// Aproximação dos valores das médias.
+		for(Integer chave: avaliacaoPorTemporada.keySet()) {
+			//System.out.println(avaliacaoPorTemporada.get(chave));
+			Double media = Double.parseDouble(f.format(avaliacaoPorTemporada.get(chave)).replace(",","."));			
+			avaliacaoPorTemporada.put(chave,media);
+		}	
+		
+		return avaliacaoPorTemporada;
+	}
 }
+ 
 
 /*
 		System.out.println("\n>>>>>>>> episódios,de todas temporadas da série ".toUpperCase() + strAux.toUpperCase()
