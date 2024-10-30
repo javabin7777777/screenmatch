@@ -1,5 +1,7 @@
 package com.alura.screenmatch;
 
+import java.text.DecimalFormat;
+import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.Scanner;
 
@@ -22,6 +24,7 @@ public class ScreenmatchApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		Scanner ler = new Scanner(System.in);
+		DecimalFormat f = new DecimalFormat("##.000");
 		System.out.println("\n\n>>>>>>>>>>>> projeto screenmath - séries do omdb <<<<<<<<<<<\n\n".toUpperCase());
 		System.out.println("Entre com nome da série que você quer: ".toUpperCase());
 		String nomeDaSerie = ler.nextLine();
@@ -37,8 +40,14 @@ public class ScreenmatchApplication implements CommandLineRunner {
 		ItensUteis.encontrarEpisodio(listaDeEpisodios, titulo);
 		System.out.println("\n>>>>>>>>>>>>>>>>>>> média da avaliação das temporadas <<<<<<<<<<<<<<<<<<<<\n".toUpperCase());
 		System.out.println(ItensUteis.obterMediaDaAvaliacaoDeCadaTemporada(listaDeEpisodios));
-		ler.close();
-		
+		System.out.println("\n>>>>>>>>>>>>>>>>>>> estatísticas <<<<<<<<<<<<<<<<<<<<\n".toUpperCase());
+		System.out.println(ItensUteis.obterEstatisticas(listaDeEpisodios));
+		DoubleSummaryStatistics estatisticas = ItensUteis.obterEstatisticas(listaDeEpisodios);
+		System.out.println("\n quantidade: ".toUpperCase()+ estatisticas.getCount());
+		System.out.println("\n mínimo: ".toUpperCase()+ f.format(estatisticas.getMin()));
+		System.out.println("\n máximo: ".toUpperCase()+ f.format(estatisticas.getMax()));
+		System.out.println("\n média: ".toUpperCase()+ f.format(estatisticas.getAverage()));
+		ler.close();		
 	}
 
 }
