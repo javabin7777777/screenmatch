@@ -2,7 +2,6 @@ package com.alura.screenmatch.utilidades;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
-import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -12,7 +11,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
 import com.alura.screenmatch.model.DadosDaSerie;
 import com.alura.screenmatch.model.DadosEpisodio;
 import com.alura.screenmatch.model.DadosTemporada;
@@ -24,7 +22,7 @@ import com.alura.screenmatch.servico.FiltrarDados;
 
 public class ItensUteis {
 	private static final String end_1 = "https://www.omdbapi.com/?t=";
-	private static final String end_2 = "&apikey=7b2e191f";
+	private static final String end_2 = "&apikey=7b2e19101f";
 	private static final String end_3 = "&season=";
 
 	/*
