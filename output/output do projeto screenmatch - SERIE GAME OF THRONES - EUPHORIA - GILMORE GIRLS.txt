@@ -1,0 +1,961 @@
+SÉRIE GILMORE GIRLS
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2024-10-30T06:13:49.455-03:00  INFO 4720 --- [           main] c.a.screenmatch.ScreenmatchApplication   : Starting ScreenmatchApplication using Java 23.0.1 with PID 4720 (C:\GitHubjavabin7777777\PROJETOS-ORACLE-ONE-ALURA\screenmatch-springboot-github\screenmatch_git\target\classes started by Jupiter in C:\GitHubjavabin7777777\PROJETOS-ORACLE-ONE-ALURA\screenmatch-springboot-github\screenmatch_git)
+2024-10-30T06:13:49.469-03:00  INFO 4720 --- [           main] c.a.screenmatch.ScreenmatchApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-30T06:13:56.094-03:00  INFO 4720 --- [           main] c.a.screenmatch.ScreenmatchApplication   : Started ScreenmatchApplication in 9.449 seconds (process running for 11.744)
+
+
+>>>>>>>>>>>> PROJETO SCREENMATH - SÉRIES DO OMDB <<<<<<<<<<<
+
+
+ENTRE COM NOME DA SÉRIE QUE VOCÊ QUER: 
+gilmore girls
+
+
+>>>>>>>>> TEMPORADAS DA SÉRIE GILMORE GIRLS <<<<<<<<<
+
+DadosTemporada[numeroTemporada=1, episodios=[DadosEpisodio[Titulo=Unaired Pilot, numeroEpisodio=0, dataLancamento=2007-05-27, avaliacao=N/A], DadosEpisodio[Titulo=Pilot, numeroEpisodio=1, dataLancamento=2000-10-05, avaliacao=8.1], DadosEpisodio[Titulo=The Lorelais' First Day at Chilton, numeroEpisodio=2, dataLancamento=2000-10-12, avaliacao=8.0], DadosEpisodio[Titulo=Kill Me Now, numeroEpisodio=3, dataLancamento=2000-10-19, avaliacao=N/A], DadosEpisodio[Titulo=The Deer Hunters, numeroEpisodio=4, dataLancamento=2000-10-26, avaliacao=N/A], DadosEpisodio[Titulo=Cinnamon's Wake, numeroEpisodio=5, dataLancamento=2000-11-02, avaliacao=7.8], DadosEpisodio[Titulo=Rory's Birthday Parties, numeroEpisodio=6, dataLancamento=2000-11-09, avaliacao=8.5], DadosEpisodio[Titulo=Kiss and Tell, numeroEpisodio=7, dataLancamento=2000-11-16, avaliacao=8.3], DadosEpisodio[Titulo=Love and War and Snow, numeroEpisodio=8, dataLancamento=2000-12-14, avaliacao=N/A], DadosEpisodio[Titulo=Rory's Dance, numeroEpisodio=9, dataLancamento=2000-12-20, avaliacao=8.7], DadosEpisodio[Titulo=Forgiveness and Stuff, numeroEpisodio=10, dataLancamento=2000-12-21, avaliacao=N/A], DadosEpisodio[Titulo=Paris Is Burning, numeroEpisodio=11, dataLancamento=2001-01-11, avaliacao=N/A], DadosEpisodio[Titulo=Double Date, numeroEpisodio=12, dataLancamento=2001-01-18, avaliacao=7.8], DadosEpisodio[Titulo=Concert Interruptus, numeroEpisodio=13, dataLancamento=2001-02-15, avaliacao=8.0], DadosEpisodio[Titulo=That Damn Donna Reed, numeroEpisodio=14, dataLancamento=2001-02-22, avaliacao=7.8], DadosEpisodio[Titulo=Christopher Returns, numeroEpisodio=15, dataLancamento=2001-03-01, avaliacao=N/A], DadosEpisodio[Titulo=Star-Crossed Lovers and Other Strangers, numeroEpisodio=16, dataLancamento=2001-03-08, avaliacao=N/A], DadosEpisodio[Titulo=The Breakup: Part 2, numeroEpisodio=17, dataLancamento=2001-03-15, avaliacao=8.1], DadosEpisodio[Titulo=The Third Lorelai, numeroEpisodio=18, dataLancamento=2001-03-22, avaliacao=N/A], DadosEpisodio[Titulo=Emily in Wonderland, numeroEpisodio=19, dataLancamento=2001-04-26, avaliacao=N/A], DadosEpisodio[Titulo=P.S. I Lo..., numeroEpisodio=20, dataLancamento=2001-05-03, avaliacao=N/A], DadosEpisodio[Titulo=Love, Daisies and Troubadours, numeroEpisodio=21, dataLancamento=2001-05-10, avaliacao=N/A]]]
+DadosTemporada[numeroTemporada=2, episodios=[DadosEpisodio[Titulo=Sadie, Sadie, numeroEpisodio=1, dataLancamento=2001-10-09, avaliacao=8.1], DadosEpisodio[Titulo=Hammers and Veils, numeroEpisodio=2, dataLancamento=2001-10-09, avaliacao=N/A], DadosEpisodio[Titulo=Red Light on the Wedding Night, numeroEpisodio=3, dataLancamento=2001-10-16, avaliacao=7.8], DadosEpisodio[Titulo=The Road Trip to Harvard, numeroEpisodio=4, dataLancamento=2001-10-23, avaliacao=N/A], DadosEpisodio[Titulo=Nick & Nora/Sid & Nancy, numeroEpisodio=5, dataLancamento=2001-10-30, avaliacao=N/A], DadosEpisodio[Titulo=Presenting Lorelai Gilmore, numeroEpisodio=6, dataLancamento=2001-11-06, avaliacao=N/A], DadosEpisodio[Titulo=Like Mother, Like Daughter, numeroEpisodio=7, dataLancamento=2001-11-13, avaliacao=N/A], DadosEpisodio[Titulo=The Ins and Outs of Inns, numeroEpisodio=8, dataLancamento=2001-11-20, avaliacao=7.9], DadosEpisodio[Titulo=Run Away, Little Boy, numeroEpisodio=9, dataLancamento=2001-11-27, avaliacao=N/A], DadosEpisodio[Titulo=The Bracebridge Dinner, numeroEpisodio=10, dataLancamento=2001-12-11, avaliacao=8.6], DadosEpisodio[Titulo=Secrets and Loans, numeroEpisodio=11, dataLancamento=2002-01-22, avaliacao=7.6], DadosEpisodio[Titulo=Richard in Stars Hollow, numeroEpisodio=12, dataLancamento=2002-01-29, avaliacao=N/A], DadosEpisodio[Titulo=A-Tisket, A-Tasket, numeroEpisodio=13, dataLancamento=2002-02-05, avaliacao=N/A], DadosEpisodio[Titulo=It Should've Been Lorelai, numeroEpisodio=14, dataLancamento=2002-02-12, avaliacao=N/A], DadosEpisodio[Titulo=Lost and Found, numeroEpisodio=15, dataLancamento=2002-02-26, avaliacao=N/A], DadosEpisodio[Titulo=There's the Rub, numeroEpisodio=16, dataLancamento=2002-04-09, avaliacao=8.4], DadosEpisodio[Titulo=Dead Uncles and Vegetables, numeroEpisodio=17, dataLancamento=2002-04-16, avaliacao=N/A], DadosEpisodio[Titulo=Back in the Saddle Again, numeroEpisodio=18, dataLancamento=2002-04-23, avaliacao=N/A], DadosEpisodio[Titulo=Teach Me Tonight, numeroEpisodio=19, dataLancamento=2002-04-30, avaliacao=N/A], DadosEpisodio[Titulo=Help Wanted, numeroEpisodio=20, dataLancamento=2002-05-07, avaliacao=N/A], DadosEpisodio[Titulo=Lorelai's Graduation Day, numeroEpisodio=21, dataLancamento=2002-05-14, avaliacao=N/A], DadosEpisodio[Titulo=I Can't Get Started, numeroEpisodio=22, dataLancamento=2002-05-21, avaliacao=8.7]]]
+DadosTemporada[numeroTemporada=3, episodios=[DadosEpisodio[Titulo=Those Lazy-Hazy-Crazy Days, numeroEpisodio=1, dataLancamento=2002-09-24, avaliacao=N/A], DadosEpisodio[Titulo=Haunted Leg, numeroEpisodio=2, dataLancamento=2002-10-01, avaliacao=N/A], DadosEpisodio[Titulo=Application Anxiety, numeroEpisodio=3, dataLancamento=2002-10-08, avaliacao=N/A], DadosEpisodio[Titulo=One's Got Class and the Other One Dyes, numeroEpisodio=4, dataLancamento=2002-10-15, avaliacao=N/A], DadosEpisodio[Titulo=Eight O'Clock at the Oasis, numeroEpisodio=5, dataLancamento=2002-10-22, avaliacao=7.6], DadosEpisodio[Titulo=Take the Deviled Eggs..., numeroEpisodio=6, dataLancamento=2002-11-05, avaliacao=7.8], DadosEpisodio[Titulo=They Shoot Gilmores, Don't They?, numeroEpisodio=7, dataLancamento=2002-11-12, avaliacao=8.9], DadosEpisodio[Titulo=Let the Games Begin, numeroEpisodio=8, dataLancamento=2002-11-19, avaliacao=N/A], DadosEpisodio[Titulo=A Deep-Fried Korean Thanksgiving, numeroEpisodio=9, dataLancamento=2002-11-26, avaliacao=N/A], DadosEpisodio[Titulo=That'll Do, Pig, numeroEpisodio=10, dataLancamento=2003-01-14, avaliacao=8.0], DadosEpisodio[Titulo=I Solemnly Swear, numeroEpisodio=11, dataLancamento=2003-01-21, avaliacao=N/A], DadosEpisodio[Titulo=Lorelai Out of Water, numeroEpisodio=12, dataLancamento=2003-01-28, avaliacao=N/A], DadosEpisodio[Titulo=Dear Emily and Richard, numeroEpisodio=13, dataLancamento=2003-02-04, avaliacao=N/A], DadosEpisodio[Titulo=Swan Song, numeroEpisodio=14, dataLancamento=2003-02-11, avaliacao=N/A], DadosEpisodio[Titulo=Face-Off, numeroEpisodio=15, dataLancamento=2003-02-18, avaliacao=N/A], DadosEpisodio[Titulo=The Big One, numeroEpisodio=16, dataLancamento=2003-02-25, avaliacao=8.4], DadosEpisodio[Titulo=A Tale of Poes and Fire, numeroEpisodio=17, dataLancamento=2003-04-15, avaliacao=N/A], DadosEpisodio[Titulo=Happy Birthday, Baby, numeroEpisodio=18, dataLancamento=2003-04-22, avaliacao=N/A], DadosEpisodio[Titulo=Keg! Max!, numeroEpisodio=19, dataLancamento=2003-04-29, avaliacao=N/A], DadosEpisodio[Titulo=Say Goodnight, Gracie, numeroEpisodio=20, dataLancamento=2003-05-06, avaliacao=N/A], DadosEpisodio[Titulo=Here Comes the Son, numeroEpisodio=21, dataLancamento=2003-05-13, avaliacao=N/A], DadosEpisodio[Titulo=Those Are Strings, Pinocchio, numeroEpisodio=22, dataLancamento=2003-05-20, avaliacao=8.9]]]
+DadosTemporada[numeroTemporada=4, episodios=[DadosEpisodio[Titulo=Ballrooms and Biscotti, numeroEpisodio=1, dataLancamento=2003-09-23, avaliacao=N/A], DadosEpisodio[Titulo=The Lorelais' First Day at Yale, numeroEpisodio=2, dataLancamento=2003-09-30, avaliacao=N/A], DadosEpisodio[Titulo=The Hobbit, the Sofa, and Digger Stiles, numeroEpisodio=3, dataLancamento=2003-10-07, avaliacao=7.9], DadosEpisodio[Titulo=Chicken or Beef?, numeroEpisodio=4, dataLancamento=2003-10-14, avaliacao=N/A], DadosEpisodio[Titulo=The Fundamental Things Apply, numeroEpisodio=5, dataLancamento=2003-10-21, avaliacao=7.9], DadosEpisodio[Titulo=An Affair to Remember, numeroEpisodio=6, dataLancamento=2003-10-28, avaliacao=7.7], DadosEpisodio[Titulo=The Festival of Living Art, numeroEpisodio=7, dataLancamento=2003-11-04, avaliacao=8.1], DadosEpisodio[Titulo=Die, Jerk, numeroEpisodio=8, dataLancamento=2003-11-11, avaliacao=N/A], DadosEpisodio[Titulo=Ted Koppel's Big Night Out, numeroEpisodio=9, dataLancamento=2003-11-18, avaliacao=8.0], DadosEpisodio[Titulo=The Nanny and the Professor, numeroEpisodio=10, dataLancamento=2004-01-20, avaliacao=7.6], DadosEpisodio[Titulo=In the Clamor and the Clangor, numeroEpisodio=11, dataLancamento=2004-01-27, avaliacao=8.1], DadosEpisodio[Titulo=A Family Matter, numeroEpisodio=12, dataLancamento=2004-02-03, avaliacao=7.9], DadosEpisodio[Titulo=Nag Hammadi Is Where They Found the Gnostic Gospel, numeroEpisodio=13, dataLancamento=2004-02-10, avaliacao=8.2], DadosEpisodio[Titulo=The Incredible Sinking Lorelais, numeroEpisodio=14, dataLancamento=2004-02-17, avaliacao=8.5], DadosEpisodio[Titulo=Scene in a Mall, numeroEpisodio=15, dataLancamento=2004-02-24, avaliacao=8.2], DadosEpisodio[Titulo=The Reigning Lorelai, numeroEpisodio=16, dataLancamento=2004-03-02, avaliacao=N/A], DadosEpisodio[Titulo=Girls in Bikinis, Boys Doin' the Twist, numeroEpisodio=17, dataLancamento=2004-04-13, avaliacao=8.0], DadosEpisodio[Titulo=Tick, Tick, Tick, Boom!, numeroEpisodio=18, dataLancamento=2004-04-20, avaliacao=N/A], DadosEpisodio[Titulo=Afterboom, numeroEpisodio=19, dataLancamento=2004-04-27, avaliacao=N/A], DadosEpisodio[Titulo=Luke Can See Her Face, numeroEpisodio=20, dataLancamento=2004-05-04, avaliacao=8.5], DadosEpisodio[Titulo=Last Week Fights, This Week Tights, numeroEpisodio=21, dataLancamento=2004-05-11, avaliacao=8.8], DadosEpisodio[Titulo=Raincoats and Recipes, numeroEpisodio=22, dataLancamento=2004-05-18, avaliacao=9.3]]]
+DadosTemporada[numeroTemporada=5, episodios=[DadosEpisodio[Titulo=Say Goodbye to Daisy Miller, numeroEpisodio=1, dataLancamento=2004-09-21, avaliacao=8.1], DadosEpisodio[Titulo=A Messenger, Nothing More, numeroEpisodio=2, dataLancamento=2004-09-28, avaliacao=N/A], DadosEpisodio[Titulo=Written in the Stars, numeroEpisodio=3, dataLancamento=2004-10-05, avaliacao=8.4], DadosEpisodio[Titulo=Tippecanoe and Taylor, Too, numeroEpisodio=4, dataLancamento=2004-10-12, avaliacao=N/A], DadosEpisodio[Titulo=We Got Us a Pippi Virgin, numeroEpisodio=5, dataLancamento=2004-10-19, avaliacao=N/A], DadosEpisodio[Titulo=Norman Mailer, I'm Pregnant!, numeroEpisodio=6, dataLancamento=2004-10-26, avaliacao=N/A], DadosEpisodio[Titulo=You Jump, I Jump, Jack, numeroEpisodio=7, dataLancamento=2004-11-02, avaliacao=N/A], DadosEpisodio[Titulo=The Party's Over, numeroEpisodio=8, dataLancamento=2004-11-09, avaliacao=N/A], DadosEpisodio[Titulo=Emily Says Hello, numeroEpisodio=9, dataLancamento=2004-11-16, avaliacao=N/A], DadosEpisodio[Titulo=But Not as Cute as Pushkin, numeroEpisodio=10, dataLancamento=2004-11-30, avaliacao=8.2], DadosEpisodio[Titulo=Women of Questionable Morals, numeroEpisodio=11, dataLancamento=2005-01-25, avaliacao=N/A], DadosEpisodio[Titulo=Come Home, numeroEpisodio=12, dataLancamento=2005-02-01, avaliacao=7.9], DadosEpisodio[Titulo=Wedding Bell Blues, numeroEpisodio=13, dataLancamento=2005-02-08, avaliacao=N/A], DadosEpisodio[Titulo=Say Something, numeroEpisodio=14, dataLancamento=2005-02-15, avaliacao=N/A], DadosEpisodio[Titulo=Jews and Chinese Food, numeroEpisodio=15, dataLancamento=2005-02-22, avaliacao=8.0], DadosEpisodio[Titulo=So... Good Talk, numeroEpisodio=16, dataLancamento=2005-03-01, avaliacao=8.6], DadosEpisodio[Titulo=Pulp Friction, numeroEpisodio=17, dataLancamento=2005-03-08, avaliacao=8.0], DadosEpisodio[Titulo=To Live and Let Diorama, numeroEpisodio=18, dataLancamento=2005-04-19, avaliacao=N/A], DadosEpisodio[Titulo=But I'm a Gilmore!, numeroEpisodio=19, dataLancamento=2005-04-26, avaliacao=N/A], DadosEpisodio[Titulo=How Many Kropogs to Cape Cod?, numeroEpisodio=20, dataLancamento=2005-05-03, avaliacao=N/A], DadosEpisodio[Titulo=Blame Booze and Melville, numeroEpisodio=21, dataLancamento=2005-05-10, avaliacao=7.8], DadosEpisodio[Titulo=A House Is Not a Home, numeroEpisodio=22, dataLancamento=2005-05-17, avaliacao=N/A]]]
+DadosTemporada[numeroTemporada=6, episodios=[DadosEpisodio[Titulo=New and Improved Lorelai, numeroEpisodio=1, dataLancamento=2005-09-13, avaliacao=N/A], DadosEpisodio[Titulo=Fight Face, numeroEpisodio=2, dataLancamento=2005-09-20, avaliacao=7.5], DadosEpisodio[Titulo=The UnGraduate, numeroEpisodio=3, dataLancamento=2005-09-27, avaliacao=7.4], DadosEpisodio[Titulo=Always a Godmother, Never a God, numeroEpisodio=4, dataLancamento=2005-10-04, avaliacao=N/A], DadosEpisodio[Titulo=We've Got Magic to Do, numeroEpisodio=5, dataLancamento=2005-10-11, avaliacao=N/A], DadosEpisodio[Titulo=Welcome to the Dollhouse, numeroEpisodio=6, dataLancamento=2005-10-18, avaliacao=N/A], DadosEpisodio[Titulo=Twenty-One Is the Loneliest Number, numeroEpisodio=7, dataLancamento=2005-10-25, avaliacao=N/A], DadosEpisodio[Titulo=Let Me Hear Your Balalaikas Ringing Out, numeroEpisodio=8, dataLancamento=2005-11-08, avaliacao=N/A], DadosEpisodio[Titulo=The Prodigal Daughter Returns, numeroEpisodio=9, dataLancamento=2005-11-15, avaliacao=8.4], DadosEpisodio[Titulo=He's Slippin' 'Em Bread... Dig?, numeroEpisodio=10, dataLancamento=2005-11-22, avaliacao=7.4], DadosEpisodio[Titulo=The Perfect Dress, numeroEpisodio=11, dataLancamento=2006-01-10, avaliacao=N/A], DadosEpisodio[Titulo=Just Like Gwen and Gavin, numeroEpisodio=12, dataLancamento=2006-01-17, avaliacao=N/A], DadosEpisodio[Titulo=Friday Night's Alright for Fighting, numeroEpisodio=13, dataLancamento=2006-01-31, avaliacao=9.1], DadosEpisodio[Titulo=You've Been Gilmored, numeroEpisodio=14, dataLancamento=2006-02-07, avaliacao=N/A], DadosEpisodio[Titulo=A Vineyard Valentine, numeroEpisodio=15, dataLancamento=2006-02-14, avaliacao=7.5], DadosEpisodio[Titulo=Bridesmaids Revisited, numeroEpisodio=16, dataLancamento=2006-02-28, avaliacao=N/A], DadosEpisodio[Titulo=I'm OK, You're OK, numeroEpisodio=17, dataLancamento=2006-04-04, avaliacao=N/A], DadosEpisodio[Titulo=The Real Paul Anka, numeroEpisodio=18, dataLancamento=2006-04-11, avaliacao=N/A], DadosEpisodio[Titulo=I Get a Sidekick Out of You, numeroEpisodio=19, dataLancamento=2006-04-18, avaliacao=N/A], DadosEpisodio[Titulo=Super Cool Party People, numeroEpisodio=20, dataLancamento=2006-04-25, avaliacao=N/A], DadosEpisodio[Titulo=Driving Miss Gilmore, numeroEpisodio=21, dataLancamento=2006-05-02, avaliacao=N/A], DadosEpisodio[Titulo=Partings, numeroEpisodio=22, dataLancamento=2006-05-09, avaliacao=N/A]]]
+DadosTemporada[numeroTemporada=7, episodios=[DadosEpisodio[Titulo=The Long Morrow, numeroEpisodio=1, dataLancamento=2006-09-26, avaliacao=7.4], DadosEpisodio[Titulo=That's What You Get, Folks, for Makin' Whoopee, numeroEpisodio=2, dataLancamento=2006-10-03, avaliacao=N/A], DadosEpisodio[Titulo=Lorelai's First Cotillion, numeroEpisodio=3, dataLancamento=2006-10-10, avaliacao=7.3], DadosEpisodio[Titulo='S Wonderful, 'S Marvelous, numeroEpisodio=4, dataLancamento=2006-10-17, avaliacao=7.4], DadosEpisodio[Titulo=The Great Stink, numeroEpisodio=5, dataLancamento=2006-10-24, avaliacao=7.1], DadosEpisodio[Titulo=Go, Bulldogs!, numeroEpisodio=6, dataLancamento=2006-11-07, avaliacao=7.1], DadosEpisodio[Titulo=French Twist, numeroEpisodio=7, dataLancamento=2006-11-14, avaliacao=6.5], DadosEpisodio[Titulo=Introducing Lorelai Planetarium, numeroEpisodio=8, dataLancamento=2006-11-21, avaliacao=N/A], DadosEpisodio[Titulo=Knit, People, Knit!, numeroEpisodio=9, dataLancamento=2006-11-28, avaliacao=7.2], DadosEpisodio[Titulo=Merry Fisticuffs, numeroEpisodio=10, dataLancamento=2006-12-05, avaliacao=N/A], DadosEpisodio[Titulo=Santa's Secret Stuff, numeroEpisodio=11, dataLancamento=2007-01-23, avaliacao=7.4], DadosEpisodio[Titulo=To Whom It May Concern, numeroEpisodio=12, dataLancamento=2007-01-30, avaliacao=7.9], DadosEpisodio[Titulo=I'd Rather Be in Philadelphia, numeroEpisodio=13, dataLancamento=2007-02-06, avaliacao=8.0], DadosEpisodio[Titulo=Farewell, My Pet, numeroEpisodio=14, dataLancamento=2007-02-13, avaliacao=N/A], DadosEpisodio[Titulo=I'm a Kayak, Hear Me Roar, numeroEpisodio=15, dataLancamento=2007-02-20, avaliacao=N/A], DadosEpisodio[Titulo=Will You Be My Lorelai Gilmore?, numeroEpisodio=16, dataLancamento=2007-02-27, avaliacao=N/A], DadosEpisodio[Titulo=Gilmore Girls Only, numeroEpisodio=17, dataLancamento=2007-03-06, avaliacao=N/A], DadosEpisodio[Titulo=Hay Bale Maze, numeroEpisodio=18, dataLancamento=2007-04-17, avaliacao=N/A], DadosEpisodio[Titulo=It's Just Like Riding a Bike, numeroEpisodio=19, dataLancamento=2007-04-24, avaliacao=N/A], DadosEpisodio[Titulo=Lorelai? Lorelai?, numeroEpisodio=20, dataLancamento=2007-05-01, avaliacao=N/A], DadosEpisodio[Titulo=Unto the Breach, numeroEpisodio=21, dataLancamento=2007-05-08, avaliacao=N/A], DadosEpisodio[Titulo=Bon Voyage, numeroEpisodio=22, dataLancamento=2007-05-15, avaliacao=9.1]]]
+
+
+>>>>>>>> OS EPISÓDIOS,E A TEMPORADA EM QUE ELES ESTÃO,DA SÉRIE GILMORE GIRLS <<<<<<<<
+
+Episodio [numeroDaTemporada= 1, Titulo= Unaired Pilot, numeroEpisodio= 0, dataLancamento= 2007-05-27, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= Pilot, numeroEpisodio= 1, dataLancamento= 2000-10-05, avaliacao= 8.1]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Lorelais' First Day at Chilton, numeroEpisodio= 2, dataLancamento= 2000-10-12, avaliacao= 8.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= Kill Me Now, numeroEpisodio= 3, dataLancamento= 2000-10-19, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Deer Hunters, numeroEpisodio= 4, dataLancamento= 2000-10-26, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= Cinnamon's Wake, numeroEpisodio= 5, dataLancamento= 2000-11-02, avaliacao= 7.8]
+
+Episodio [numeroDaTemporada= 1, Titulo= Rory's Birthday Parties, numeroEpisodio= 6, dataLancamento= 2000-11-09, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 1, Titulo= Kiss and Tell, numeroEpisodio= 7, dataLancamento= 2000-11-16, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 1, Titulo= Love and War and Snow, numeroEpisodio= 8, dataLancamento= 2000-12-14, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= Rory's Dance, numeroEpisodio= 9, dataLancamento= 2000-12-20, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 1, Titulo= Forgiveness and Stuff, numeroEpisodio= 10, dataLancamento= 2000-12-21, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= Paris Is Burning, numeroEpisodio= 11, dataLancamento= 2001-01-11, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= Double Date, numeroEpisodio= 12, dataLancamento= 2001-01-18, avaliacao= 7.8]
+
+Episodio [numeroDaTemporada= 1, Titulo= Concert Interruptus, numeroEpisodio= 13, dataLancamento= 2001-02-15, avaliacao= 8.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= That Damn Donna Reed, numeroEpisodio= 14, dataLancamento= 2001-02-22, avaliacao= 7.8]
+
+Episodio [numeroDaTemporada= 1, Titulo= Christopher Returns, numeroEpisodio= 15, dataLancamento= 2001-03-01, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= Star-Crossed Lovers and Other Strangers, numeroEpisodio= 16, dataLancamento= 2001-03-08, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Breakup: Part 2, numeroEpisodio= 17, dataLancamento= 2001-03-15, avaliacao= 8.1]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Third Lorelai, numeroEpisodio= 18, dataLancamento= 2001-03-22, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= Emily in Wonderland, numeroEpisodio= 19, dataLancamento= 2001-04-26, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= P.S. I Lo..., numeroEpisodio= 20, dataLancamento= 2001-05-03, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= Love, Daisies and Troubadours, numeroEpisodio= 21, dataLancamento= 2001-05-10, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= Sadie, Sadie, numeroEpisodio= 1, dataLancamento= 2001-10-09, avaliacao= 8.1]
+
+Episodio [numeroDaTemporada= 2, Titulo= Hammers and Veils, numeroEpisodio= 2, dataLancamento= 2001-10-09, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= Red Light on the Wedding Night, numeroEpisodio= 3, dataLancamento= 2001-10-16, avaliacao= 7.8]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Road Trip to Harvard, numeroEpisodio= 4, dataLancamento= 2001-10-23, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= Nick & Nora/Sid & Nancy, numeroEpisodio= 5, dataLancamento= 2001-10-30, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= Presenting Lorelai Gilmore, numeroEpisodio= 6, dataLancamento= 2001-11-06, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= Like Mother, Like Daughter, numeroEpisodio= 7, dataLancamento= 2001-11-13, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Ins and Outs of Inns, numeroEpisodio= 8, dataLancamento= 2001-11-20, avaliacao= 7.9]
+
+Episodio [numeroDaTemporada= 2, Titulo= Run Away, Little Boy, numeroEpisodio= 9, dataLancamento= 2001-11-27, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Bracebridge Dinner, numeroEpisodio= 10, dataLancamento= 2001-12-11, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 2, Titulo= Secrets and Loans, numeroEpisodio= 11, dataLancamento= 2002-01-22, avaliacao= 7.6]
+
+Episodio [numeroDaTemporada= 2, Titulo= Richard in Stars Hollow, numeroEpisodio= 12, dataLancamento= 2002-01-29, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= A-Tisket, A-Tasket, numeroEpisodio= 13, dataLancamento= 2002-02-05, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= It Should've Been Lorelai, numeroEpisodio= 14, dataLancamento= 2002-02-12, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= Lost and Found, numeroEpisodio= 15, dataLancamento= 2002-02-26, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= There's the Rub, numeroEpisodio= 16, dataLancamento= 2002-04-09, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 2, Titulo= Dead Uncles and Vegetables, numeroEpisodio= 17, dataLancamento= 2002-04-16, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= Back in the Saddle Again, numeroEpisodio= 18, dataLancamento= 2002-04-23, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= Teach Me Tonight, numeroEpisodio= 19, dataLancamento= 2002-04-30, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= Help Wanted, numeroEpisodio= 20, dataLancamento= 2002-05-07, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= Lorelai's Graduation Day, numeroEpisodio= 21, dataLancamento= 2002-05-14, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= I Can't Get Started, numeroEpisodio= 22, dataLancamento= 2002-05-21, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 3, Titulo= Those Lazy-Hazy-Crazy Days, numeroEpisodio= 1, dataLancamento= 2002-09-24, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Haunted Leg, numeroEpisodio= 2, dataLancamento= 2002-10-01, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Application Anxiety, numeroEpisodio= 3, dataLancamento= 2002-10-08, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= One's Got Class and the Other One Dyes, numeroEpisodio= 4, dataLancamento= 2002-10-15, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Eight O'Clock at the Oasis, numeroEpisodio= 5, dataLancamento= 2002-10-22, avaliacao= 7.6]
+
+Episodio [numeroDaTemporada= 3, Titulo= Take the Deviled Eggs..., numeroEpisodio= 6, dataLancamento= 2002-11-05, avaliacao= 7.8]
+
+Episodio [numeroDaTemporada= 3, Titulo= They Shoot Gilmores, Don't They?, numeroEpisodio= 7, dataLancamento= 2002-11-12, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 3, Titulo= Let the Games Begin, numeroEpisodio= 8, dataLancamento= 2002-11-19, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= A Deep-Fried Korean Thanksgiving, numeroEpisodio= 9, dataLancamento= 2002-11-26, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= That'll Do, Pig, numeroEpisodio= 10, dataLancamento= 2003-01-14, avaliacao= 8.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= I Solemnly Swear, numeroEpisodio= 11, dataLancamento= 2003-01-21, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Lorelai Out of Water, numeroEpisodio= 12, dataLancamento= 2003-01-28, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Dear Emily and Richard, numeroEpisodio= 13, dataLancamento= 2003-02-04, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Swan Song, numeroEpisodio= 14, dataLancamento= 2003-02-11, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Face-Off, numeroEpisodio= 15, dataLancamento= 2003-02-18, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= The Big One, numeroEpisodio= 16, dataLancamento= 2003-02-25, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 3, Titulo= A Tale of Poes and Fire, numeroEpisodio= 17, dataLancamento= 2003-04-15, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Happy Birthday, Baby, numeroEpisodio= 18, dataLancamento= 2003-04-22, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Keg! Max!, numeroEpisodio= 19, dataLancamento= 2003-04-29, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Say Goodnight, Gracie, numeroEpisodio= 20, dataLancamento= 2003-05-06, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Here Comes the Son, numeroEpisodio= 21, dataLancamento= 2003-05-13, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Those Are Strings, Pinocchio, numeroEpisodio= 22, dataLancamento= 2003-05-20, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 4, Titulo= Ballrooms and Biscotti, numeroEpisodio= 1, dataLancamento= 2003-09-23, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Lorelais' First Day at Yale, numeroEpisodio= 2, dataLancamento= 2003-09-30, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Hobbit, the Sofa, and Digger Stiles, numeroEpisodio= 3, dataLancamento= 2003-10-07, avaliacao= 7.9]
+
+Episodio [numeroDaTemporada= 4, Titulo= Chicken or Beef?, numeroEpisodio= 4, dataLancamento= 2003-10-14, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Fundamental Things Apply, numeroEpisodio= 5, dataLancamento= 2003-10-21, avaliacao= 7.9]
+
+Episodio [numeroDaTemporada= 4, Titulo= An Affair to Remember, numeroEpisodio= 6, dataLancamento= 2003-10-28, avaliacao= 7.7]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Festival of Living Art, numeroEpisodio= 7, dataLancamento= 2003-11-04, avaliacao= 8.1]
+
+Episodio [numeroDaTemporada= 4, Titulo= Die, Jerk, numeroEpisodio= 8, dataLancamento= 2003-11-11, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 4, Titulo= Ted Koppel's Big Night Out, numeroEpisodio= 9, dataLancamento= 2003-11-18, avaliacao= 8.0]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Nanny and the Professor, numeroEpisodio= 10, dataLancamento= 2004-01-20, avaliacao= 7.6]
+
+Episodio [numeroDaTemporada= 4, Titulo= In the Clamor and the Clangor, numeroEpisodio= 11, dataLancamento= 2004-01-27, avaliacao= 8.1]
+
+Episodio [numeroDaTemporada= 4, Titulo= A Family Matter, numeroEpisodio= 12, dataLancamento= 2004-02-03, avaliacao= 7.9]
+
+Episodio [numeroDaTemporada= 4, Titulo= Nag Hammadi Is Where They Found the Gnostic Gospel, numeroEpisodio= 13, dataLancamento= 2004-02-10, avaliacao= 8.2]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Incredible Sinking Lorelais, numeroEpisodio= 14, dataLancamento= 2004-02-17, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 4, Titulo= Scene in a Mall, numeroEpisodio= 15, dataLancamento= 2004-02-24, avaliacao= 8.2]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Reigning Lorelai, numeroEpisodio= 16, dataLancamento= 2004-03-02, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 4, Titulo= Girls in Bikinis, Boys Doin' the Twist, numeroEpisodio= 17, dataLancamento= 2004-04-13, avaliacao= 8.0]
+
+Episodio [numeroDaTemporada= 4, Titulo= Tick, Tick, Tick, Boom!, numeroEpisodio= 18, dataLancamento= 2004-04-20, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 4, Titulo= Afterboom, numeroEpisodio= 19, dataLancamento= 2004-04-27, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 4, Titulo= Luke Can See Her Face, numeroEpisodio= 20, dataLancamento= 2004-05-04, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 4, Titulo= Last Week Fights, This Week Tights, numeroEpisodio= 21, dataLancamento= 2004-05-11, avaliacao= 8.8]
+
+Episodio [numeroDaTemporada= 4, Titulo= Raincoats and Recipes, numeroEpisodio= 22, dataLancamento= 2004-05-18, avaliacao= 9.3]
+
+Episodio [numeroDaTemporada= 5, Titulo= Say Goodbye to Daisy Miller, numeroEpisodio= 1, dataLancamento= 2004-09-21, avaliacao= 8.1]
+
+Episodio [numeroDaTemporada= 5, Titulo= A Messenger, Nothing More, numeroEpisodio= 2, dataLancamento= 2004-09-28, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= Written in the Stars, numeroEpisodio= 3, dataLancamento= 2004-10-05, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 5, Titulo= Tippecanoe and Taylor, Too, numeroEpisodio= 4, dataLancamento= 2004-10-12, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= We Got Us a Pippi Virgin, numeroEpisodio= 5, dataLancamento= 2004-10-19, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= Norman Mailer, I'm Pregnant!, numeroEpisodio= 6, dataLancamento= 2004-10-26, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= You Jump, I Jump, Jack, numeroEpisodio= 7, dataLancamento= 2004-11-02, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= The Party's Over, numeroEpisodio= 8, dataLancamento= 2004-11-09, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= Emily Says Hello, numeroEpisodio= 9, dataLancamento= 2004-11-16, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= But Not as Cute as Pushkin, numeroEpisodio= 10, dataLancamento= 2004-11-30, avaliacao= 8.2]
+
+Episodio [numeroDaTemporada= 5, Titulo= Women of Questionable Morals, numeroEpisodio= 11, dataLancamento= 2005-01-25, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= Come Home, numeroEpisodio= 12, dataLancamento= 2005-02-01, avaliacao= 7.9]
+
+Episodio [numeroDaTemporada= 5, Titulo= Wedding Bell Blues, numeroEpisodio= 13, dataLancamento= 2005-02-08, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= Say Something, numeroEpisodio= 14, dataLancamento= 2005-02-15, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= Jews and Chinese Food, numeroEpisodio= 15, dataLancamento= 2005-02-22, avaliacao= 8.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= So... Good Talk, numeroEpisodio= 16, dataLancamento= 2005-03-01, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 5, Titulo= Pulp Friction, numeroEpisodio= 17, dataLancamento= 2005-03-08, avaliacao= 8.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= To Live and Let Diorama, numeroEpisodio= 18, dataLancamento= 2005-04-19, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= But I'm a Gilmore!, numeroEpisodio= 19, dataLancamento= 2005-04-26, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= How Many Kropogs to Cape Cod?, numeroEpisodio= 20, dataLancamento= 2005-05-03, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 5, Titulo= Blame Booze and Melville, numeroEpisodio= 21, dataLancamento= 2005-05-10, avaliacao= 7.8]
+
+Episodio [numeroDaTemporada= 5, Titulo= A House Is Not a Home, numeroEpisodio= 22, dataLancamento= 2005-05-17, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= New and Improved Lorelai, numeroEpisodio= 1, dataLancamento= 2005-09-13, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= Fight Face, numeroEpisodio= 2, dataLancamento= 2005-09-20, avaliacao= 7.5]
+
+Episodio [numeroDaTemporada= 6, Titulo= The UnGraduate, numeroEpisodio= 3, dataLancamento= 2005-09-27, avaliacao= 7.4]
+
+Episodio [numeroDaTemporada= 6, Titulo= Always a Godmother, Never a God, numeroEpisodio= 4, dataLancamento= 2005-10-04, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= We've Got Magic to Do, numeroEpisodio= 5, dataLancamento= 2005-10-11, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= Welcome to the Dollhouse, numeroEpisodio= 6, dataLancamento= 2005-10-18, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= Twenty-One Is the Loneliest Number, numeroEpisodio= 7, dataLancamento= 2005-10-25, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= Let Me Hear Your Balalaikas Ringing Out, numeroEpisodio= 8, dataLancamento= 2005-11-08, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= The Prodigal Daughter Returns, numeroEpisodio= 9, dataLancamento= 2005-11-15, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 6, Titulo= He's Slippin' 'Em Bread... Dig?, numeroEpisodio= 10, dataLancamento= 2005-11-22, avaliacao= 7.4]
+
+Episodio [numeroDaTemporada= 6, Titulo= The Perfect Dress, numeroEpisodio= 11, dataLancamento= 2006-01-10, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= Just Like Gwen and Gavin, numeroEpisodio= 12, dataLancamento= 2006-01-17, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= Friday Night's Alright for Fighting, numeroEpisodio= 13, dataLancamento= 2006-01-31, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 6, Titulo= You've Been Gilmored, numeroEpisodio= 14, dataLancamento= 2006-02-07, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= A Vineyard Valentine, numeroEpisodio= 15, dataLancamento= 2006-02-14, avaliacao= 7.5]
+
+Episodio [numeroDaTemporada= 6, Titulo= Bridesmaids Revisited, numeroEpisodio= 16, dataLancamento= 2006-02-28, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= I'm OK, You're OK, numeroEpisodio= 17, dataLancamento= 2006-04-04, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= The Real Paul Anka, numeroEpisodio= 18, dataLancamento= 2006-04-11, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= I Get a Sidekick Out of You, numeroEpisodio= 19, dataLancamento= 2006-04-18, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= Super Cool Party People, numeroEpisodio= 20, dataLancamento= 2006-04-25, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= Driving Miss Gilmore, numeroEpisodio= 21, dataLancamento= 2006-05-02, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= Partings, numeroEpisodio= 22, dataLancamento= 2006-05-09, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= The Long Morrow, numeroEpisodio= 1, dataLancamento= 2006-09-26, avaliacao= 7.4]
+
+Episodio [numeroDaTemporada= 7, Titulo= That's What You Get, Folks, for Makin' Whoopee, numeroEpisodio= 2, dataLancamento= 2006-10-03, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Lorelai's First Cotillion, numeroEpisodio= 3, dataLancamento= 2006-10-10, avaliacao= 7.3]
+
+Episodio [numeroDaTemporada= 7, Titulo= 'S Wonderful, 'S Marvelous, numeroEpisodio= 4, dataLancamento= 2006-10-17, avaliacao= 7.4]
+
+Episodio [numeroDaTemporada= 7, Titulo= The Great Stink, numeroEpisodio= 5, dataLancamento= 2006-10-24, avaliacao= 7.1]
+
+Episodio [numeroDaTemporada= 7, Titulo= Go, Bulldogs!, numeroEpisodio= 6, dataLancamento= 2006-11-07, avaliacao= 7.1]
+
+Episodio [numeroDaTemporada= 7, Titulo= French Twist, numeroEpisodio= 7, dataLancamento= 2006-11-14, avaliacao= 6.5]
+
+Episodio [numeroDaTemporada= 7, Titulo= Introducing Lorelai Planetarium, numeroEpisodio= 8, dataLancamento= 2006-11-21, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Knit, People, Knit!, numeroEpisodio= 9, dataLancamento= 2006-11-28, avaliacao= 7.2]
+
+Episodio [numeroDaTemporada= 7, Titulo= Merry Fisticuffs, numeroEpisodio= 10, dataLancamento= 2006-12-05, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Santa's Secret Stuff, numeroEpisodio= 11, dataLancamento= 2007-01-23, avaliacao= 7.4]
+
+Episodio [numeroDaTemporada= 7, Titulo= To Whom It May Concern, numeroEpisodio= 12, dataLancamento= 2007-01-30, avaliacao= 7.9]
+
+Episodio [numeroDaTemporada= 7, Titulo= I'd Rather Be in Philadelphia, numeroEpisodio= 13, dataLancamento= 2007-02-06, avaliacao= 8.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Farewell, My Pet, numeroEpisodio= 14, dataLancamento= 2007-02-13, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= I'm a Kayak, Hear Me Roar, numeroEpisodio= 15, dataLancamento= 2007-02-20, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Will You Be My Lorelai Gilmore?, numeroEpisodio= 16, dataLancamento= 2007-02-27, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Gilmore Girls Only, numeroEpisodio= 17, dataLancamento= 2007-03-06, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Hay Bale Maze, numeroEpisodio= 18, dataLancamento= 2007-04-17, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= It's Just Like Riding a Bike, numeroEpisodio= 19, dataLancamento= 2007-04-24, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Lorelai? Lorelai?, numeroEpisodio= 20, dataLancamento= 2007-05-01, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Unto the Breach, numeroEpisodio= 21, dataLancamento= 2007-05-08, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Bon Voyage, numeroEpisodio= 22, dataLancamento= 2007-05-15, avaliacao= 9.1]
+
+
+>>>>>>>> OS CINCOS MELHORES EPISÓDIOS,DE TODAS TEMPORADAS DA SÉRIE GILMORE GIRLS <<<<<<<<
+
+java.util.stream.SliceOps$1@67d86804
+
+Episodio [numeroDaTemporada= 4, Titulo= Raincoats and Recipes, numeroEpisodio= 22, dataLancamento= 2004-05-18, avaliacao= 9.3]
+
+Episodio [numeroDaTemporada= 6, Titulo= Friday Night's Alright for Fighting, numeroEpisodio= 13, dataLancamento= 2006-01-31, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 7, Titulo= Bon Voyage, numeroEpisodio= 22, dataLancamento= 2007-05-15, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 3, Titulo= They Shoot Gilmores, Don't They?, numeroEpisodio= 7, dataLancamento= 2002-11-12, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 3, Titulo= Those Are Strings, Pinocchio, numeroEpisodio= 22, dataLancamento= 2003-05-20, avaliacao= 8.9]
+
+
+>>>>>>>> OS CINCOS MELHORES EPISÓDIOS,DE TODAS TEMPORADAS DA SÉRIE GILMORE GIRLS <<<<<<<<
+
+DadosEpisodio[Titulo=Raincoats and Recipes, numeroEpisodio=22, dataLancamento=2004-05-18, avaliacao=9.3]
+DadosEpisodio[Titulo=Friday Night's Alright for Fighting, numeroEpisodio=13, dataLancamento=2006-01-31, avaliacao=9.1]
+DadosEpisodio[Titulo=Bon Voyage, numeroEpisodio=22, dataLancamento=2007-05-15, avaliacao=9.1]
+DadosEpisodio[Titulo=They Shoot Gilmores, Don't They?, numeroEpisodio=7, dataLancamento=2002-11-12, avaliacao=8.9]
+DadosEpisodio[Titulo=Those Are Strings, Pinocchio, numeroEpisodio=22, dataLancamento=2003-05-20, avaliacao=8.9]
+
+ENTRE COM O ANO DA SÉRIE QUE VOCÊ QUER: 
+2007
+
+DATA ENTRADA: 2007-01-01
+
+Episodio [numeroDaTemporada= 1, Titulo= Unaired Pilot, numeroEpisodio= 0, dataLancamento= 2007-05-27, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Santa's Secret Stuff, numeroEpisodio= 11, dataLancamento= 2007-01-23, avaliacao= 7.4]
+
+Episodio [numeroDaTemporada= 7, Titulo= To Whom It May Concern, numeroEpisodio= 12, dataLancamento= 2007-01-30, avaliacao= 7.9]
+
+Episodio [numeroDaTemporada= 7, Titulo= I'd Rather Be in Philadelphia, numeroEpisodio= 13, dataLancamento= 2007-02-06, avaliacao= 8.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Farewell, My Pet, numeroEpisodio= 14, dataLancamento= 2007-02-13, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= I'm a Kayak, Hear Me Roar, numeroEpisodio= 15, dataLancamento= 2007-02-20, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Will You Be My Lorelai Gilmore?, numeroEpisodio= 16, dataLancamento= 2007-02-27, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Gilmore Girls Only, numeroEpisodio= 17, dataLancamento= 2007-03-06, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Hay Bale Maze, numeroEpisodio= 18, dataLancamento= 2007-04-17, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= It's Just Like Riding a Bike, numeroEpisodio= 19, dataLancamento= 2007-04-24, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Lorelai? Lorelai?, numeroEpisodio= 20, dataLancamento= 2007-05-01, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Unto the Breach, numeroEpisodio= 21, dataLancamento= 2007-05-08, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= Bon Voyage, numeroEpisodio= 22, dataLancamento= 2007-05-15, avaliacao= 9.1]
+
+
+ENTRE COM O TÍTULO DO EPISÓDIO: 
+bon
+
+Bon Voyage ENCONTRADO NA TEMPORADA - 7
+
+TITULO ENCONTRADO: Optional[Episodio [numeroDaTemporada= 7, Titulo= Bon Voyage, numeroEpisodio= 22, dataLancamento= 2007-05-15, avaliacao= 9.1]
+]
+
+>>>>>>>>>>>>>>>>>>> MÉDIA DA AVALIAÇÃO DAS TEMPORADAS <<<<<<<<<<<<<<<<<<<<
+
+
+{1=8.11, 2=8.157142857142857, 3=8.266666666666667, 4=8.18, 5=8.125, 6=7.883333333333333, 7=7.490909090909091}
+
+{1=8.11, 2=8.1571, 3=8.2667, 4=8.18, 5=8.125, 6=7.8833, 7=7.4909}
+
+>>>>>>>>>>>>>>>>>>> ESTATÍSTICAS <<<<<<<<<<<<<<<<<<<<
+
+DoubleSummaryStatistics{count=63, sum=505,200000, min=6,500000, average=8,019048, max=9,300000}
+
+ QUANTIDADE: 63
+
+ MÍNIMO: 6,500
+
+ MÁXIMO: 9,300
+
+ MÉDIA: 8,019
+
+
+SÉRIE EUPHORIA
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2024-10-30T06:23:22.628-03:00  INFO 7372 --- [           main] c.a.screenmatch.ScreenmatchApplication   : Starting ScreenmatchApplication using Java 23.0.1 with PID 7372 (C:\GitHubjavabin7777777\PROJETOS-ORACLE-ONE-ALURA\screenmatch-springboot-github\screenmatch_git\target\classes started by Jupiter in C:\GitHubjavabin7777777\PROJETOS-ORACLE-ONE-ALURA\screenmatch-springboot-github\screenmatch_git)
+2024-10-30T06:23:22.643-03:00  INFO 7372 --- [           main] c.a.screenmatch.ScreenmatchApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-30T06:23:29.370-03:00  INFO 7372 --- [           main] c.a.screenmatch.ScreenmatchApplication   : Started ScreenmatchApplication in 11.516 seconds (process running for 13.483)
+
+
+>>>>>>>>>>>> PROJETO SCREENMATH - SÉRIES DO OMDB <<<<<<<<<<<
+
+
+ENTRE COM NOME DA SÉRIE QUE VOCÊ QUER: 
+euphoria
+
+
+>>>>>>>>> TEMPORADAS DA SÉRIE EUPHORIA <<<<<<<<<
+
+DadosTemporada[numeroTemporada=1, episodios=[DadosEpisodio[Titulo=Pilot, numeroEpisodio=1, dataLancamento=2019-06-16, avaliacao=8.1], DadosEpisodio[Titulo=Stuntin' Like My Daddy, numeroEpisodio=2, dataLancamento=2019-06-23, avaliacao=8.1], DadosEpisodio[Titulo=Made You Look, numeroEpisodio=3, dataLancamento=2019-06-30, avaliacao=8.3], DadosEpisodio[Titulo=Shook Ones Pt II, numeroEpisodio=4, dataLancamento=2019-07-07, avaliacao=9.0], DadosEpisodio[Titulo='03 Bonnie and Clyde, numeroEpisodio=5, dataLancamento=2019-07-14, avaliacao=8.0], DadosEpisodio[Titulo=The Next Episode, numeroEpisodio=6, dataLancamento=2019-07-21, avaliacao=8.1], DadosEpisodio[Titulo=The Trials and Tribulations of Trying to Pee While Depressed, numeroEpisodio=7, dataLancamento=2019-07-28, avaliacao=8.4], DadosEpisodio[Titulo=And Salt the Earth Behind You, numeroEpisodio=8, dataLancamento=2019-08-04, avaliacao=8.2]]]
+DadosTemporada[numeroTemporada=2, episodios=[DadosEpisodio[Titulo=Trying to Get to Heaven Before They Close the Door, numeroEpisodio=1, dataLancamento=2022-01-09, avaliacao=9.1], DadosEpisodio[Titulo=Out of Touch, numeroEpisodio=2, dataLancamento=2022-01-16, avaliacao=8.0], DadosEpisodio[Titulo=Ruminations: Big and Little Bullys, numeroEpisodio=3, dataLancamento=2022-01-23, avaliacao=8.5], DadosEpisodio[Titulo=You Who Cannot See, Think of Those Who Can, numeroEpisodio=4, dataLancamento=2022-01-30, avaliacao=8.4], DadosEpisodio[Titulo=Stand Still Like the Hummingbird, numeroEpisodio=5, dataLancamento=2022-02-06, avaliacao=9.5], DadosEpisodio[Titulo=A Thousand Little Trees of Blood, numeroEpisodio=6, dataLancamento=2022-02-13, avaliacao=8.3], DadosEpisodio[Titulo=The Theater and Its Double, numeroEpisodio=7, dataLancamento=2022-02-20, avaliacao=8.9], DadosEpisodio[Titulo=All My Life, My Heart Has Yearned for a Thing I Cannot Name, numeroEpisodio=8, dataLancamento=2022-02-27, avaliacao=8.3]]]
+DadosTemporada[numeroTemporada=3, episodios=[DadosEpisodio[Titulo=Episode #3.1, numeroEpisodio=1, dataLancamento=N/A, avaliacao=N/A]]]
+
+
+>>>>>>>> OS EPISÓDIOS,E A TEMPORADA EM QUE ELES ESTÃO,DA SÉRIE EUPHORIA <<<<<<<<
+
+Episodio [numeroDaTemporada= 1, Titulo= Pilot, numeroEpisodio= 1, dataLancamento= 2019-06-16, avaliacao= 8.1]
+
+Episodio [numeroDaTemporada= 1, Titulo= Stuntin' Like My Daddy, numeroEpisodio= 2, dataLancamento= 2019-06-23, avaliacao= 8.1]
+
+Episodio [numeroDaTemporada= 1, Titulo= Made You Look, numeroEpisodio= 3, dataLancamento= 2019-06-30, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 1, Titulo= Shook Ones Pt II, numeroEpisodio= 4, dataLancamento= 2019-07-07, avaliacao= 9.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= '03 Bonnie and Clyde, numeroEpisodio= 5, dataLancamento= 2019-07-14, avaliacao= 8.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Next Episode, numeroEpisodio= 6, dataLancamento= 2019-07-21, avaliacao= 8.1]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Trials and Tribulations of Trying to Pee While Depressed, numeroEpisodio= 7, dataLancamento= 2019-07-28, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 1, Titulo= And Salt the Earth Behind You, numeroEpisodio= 8, dataLancamento= 2019-08-04, avaliacao= 8.2]
+
+Episodio [numeroDaTemporada= 2, Titulo= Trying to Get to Heaven Before They Close the Door, numeroEpisodio= 1, dataLancamento= 2022-01-09, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 2, Titulo= Out of Touch, numeroEpisodio= 2, dataLancamento= 2022-01-16, avaliacao= 8.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= Ruminations: Big and Little Bullys, numeroEpisodio= 3, dataLancamento= 2022-01-23, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 2, Titulo= You Who Cannot See, Think of Those Who Can, numeroEpisodio= 4, dataLancamento= 2022-01-30, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 2, Titulo= Stand Still Like the Hummingbird, numeroEpisodio= 5, dataLancamento= 2022-02-06, avaliacao= 9.5]
+
+Episodio [numeroDaTemporada= 2, Titulo= A Thousand Little Trees of Blood, numeroEpisodio= 6, dataLancamento= 2022-02-13, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Theater and Its Double, numeroEpisodio= 7, dataLancamento= 2022-02-20, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 2, Titulo= All My Life, My Heart Has Yearned for a Thing I Cannot Name, numeroEpisodio= 8, dataLancamento= 2022-02-27, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 3, Titulo= Episode #3.1, numeroEpisodio= 1, dataLancamento= null, avaliacao= 0.0]
+
+
+>>>>>>>> OS CINCOS MELHORES EPISÓDIOS,DE TODAS TEMPORADAS DA SÉRIE EUPHORIA <<<<<<<<
+
+java.util.stream.SliceOps$1@470a659f
+
+Episodio [numeroDaTemporada= 2, Titulo= Stand Still Like the Hummingbird, numeroEpisodio= 5, dataLancamento= 2022-02-06, avaliacao= 9.5]
+
+Episodio [numeroDaTemporada= 2, Titulo= Trying to Get to Heaven Before They Close the Door, numeroEpisodio= 1, dataLancamento= 2022-01-09, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 1, Titulo= Shook Ones Pt II, numeroEpisodio= 4, dataLancamento= 2019-07-07, avaliacao= 9.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Theater and Its Double, numeroEpisodio= 7, dataLancamento= 2022-02-20, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 2, Titulo= Ruminations: Big and Little Bullys, numeroEpisodio= 3, dataLancamento= 2022-01-23, avaliacao= 8.5]
+
+
+>>>>>>>> OS CINCOS MELHORES EPISÓDIOS,DE TODAS TEMPORADAS DA SÉRIE EUPHORIA <<<<<<<<
+
+DadosEpisodio[Titulo=Stand Still Like the Hummingbird, numeroEpisodio=5, dataLancamento=2022-02-06, avaliacao=9.5]
+DadosEpisodio[Titulo=Trying to Get to Heaven Before They Close the Door, numeroEpisodio=1, dataLancamento=2022-01-09, avaliacao=9.1]
+DadosEpisodio[Titulo=Shook Ones Pt II, numeroEpisodio=4, dataLancamento=2019-07-07, avaliacao=9.0]
+DadosEpisodio[Titulo=The Theater and Its Double, numeroEpisodio=7, dataLancamento=2022-02-20, avaliacao=8.9]
+DadosEpisodio[Titulo=Ruminations: Big and Little Bullys, numeroEpisodio=3, dataLancamento=2022-01-23, avaliacao=8.5]
+
+ENTRE COM O ANO DA SÉRIE QUE VOCÊ QUER: 
+2007
+
+DATA ENTRADA: 2007-01-01
+
+Episodio [numeroDaTemporada= 1, Titulo= Pilot, numeroEpisodio= 1, dataLancamento= 2019-06-16, avaliacao= 8.1]
+
+Episodio [numeroDaTemporada= 1, Titulo= Stuntin' Like My Daddy, numeroEpisodio= 2, dataLancamento= 2019-06-23, avaliacao= 8.1]
+
+Episodio [numeroDaTemporada= 1, Titulo= Made You Look, numeroEpisodio= 3, dataLancamento= 2019-06-30, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 1, Titulo= Shook Ones Pt II, numeroEpisodio= 4, dataLancamento= 2019-07-07, avaliacao= 9.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= '03 Bonnie and Clyde, numeroEpisodio= 5, dataLancamento= 2019-07-14, avaliacao= 8.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Next Episode, numeroEpisodio= 6, dataLancamento= 2019-07-21, avaliacao= 8.1]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Trials and Tribulations of Trying to Pee While Depressed, numeroEpisodio= 7, dataLancamento= 2019-07-28, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 1, Titulo= And Salt the Earth Behind You, numeroEpisodio= 8, dataLancamento= 2019-08-04, avaliacao= 8.2]
+
+Episodio [numeroDaTemporada= 2, Titulo= Trying to Get to Heaven Before They Close the Door, numeroEpisodio= 1, dataLancamento= 2022-01-09, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 2, Titulo= Out of Touch, numeroEpisodio= 2, dataLancamento= 2022-01-16, avaliacao= 8.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= Ruminations: Big and Little Bullys, numeroEpisodio= 3, dataLancamento= 2022-01-23, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 2, Titulo= You Who Cannot See, Think of Those Who Can, numeroEpisodio= 4, dataLancamento= 2022-01-30, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 2, Titulo= Stand Still Like the Hummingbird, numeroEpisodio= 5, dataLancamento= 2022-02-06, avaliacao= 9.5]
+
+Episodio [numeroDaTemporada= 2, Titulo= A Thousand Little Trees of Blood, numeroEpisodio= 6, dataLancamento= 2022-02-13, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Theater and Its Double, numeroEpisodio= 7, dataLancamento= 2022-02-20, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 2, Titulo= All My Life, My Heart Has Yearned for a Thing I Cannot Name, numeroEpisodio= 8, dataLancamento= 2022-02-27, avaliacao= 8.3]
+
+
+ENTRE COM O TÍTULO DO EPISÓDIO: 
+a
+
+TITULO ENCONTRADO: Optional[Episodio [numeroDaTemporada= 1, Titulo= Stuntin' Like My Daddy, numeroEpisodio= 2, dataLancamento= 2019-06-23, avaliacao= 8.1]
+]
+
+>>>>>>>>>>>>>>>>>>> MÉDIA DA AVALIAÇÃO DAS TEMPORADAS <<<<<<<<<<<<<<<<<<<<
+
+{1=8.275, 2=8.625}
+
+>>>>>>>>>>>>>>>>>>> ESTATÍSTICAS <<<<<<<<<<<<<<<<<<<<
+
+DoubleSummaryStatistics{count=16, sum=135,200000, min=8,000000, average=8,450000, max=9,500000}
+
+ QUANTIDADE: 16
+
+ MÍNIMO: 8,000
+
+ MÁXIMO: 9,500
+
+ MÉDIA: 8,450
+
+SÉRIE GAME OF THRONES
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2024-10-30T06:25:53.786-03:00  INFO 8120 --- [           main] c.a.screenmatch.ScreenmatchApplication   : Starting ScreenmatchApplication using Java 23.0.1 with PID 8120 (C:\GitHubjavabin7777777\PROJETOS-ORACLE-ONE-ALURA\screenmatch-springboot-github\screenmatch_git\target\classes started by Jupiter in C:\GitHubjavabin7777777\PROJETOS-ORACLE-ONE-ALURA\screenmatch-springboot-github\screenmatch_git)
+2024-10-30T06:25:53.821-03:00  INFO 8120 --- [           main] c.a.screenmatch.ScreenmatchApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-30T06:25:57.994-03:00  INFO 8120 --- [           main] c.a.screenmatch.ScreenmatchApplication   : Started ScreenmatchApplication in 6.406 seconds (process running for 8.371)
+
+
+>>>>>>>>>>>> PROJETO SCREENMATH - SÉRIES DO OMDB <<<<<<<<<<<
+
+
+ENTRE COM NOME DA SÉRIE QUE VOCÊ QUER: 
+game of thrones
+
+
+>>>>>>>>> TEMPORADAS DA SÉRIE GAME OF THRONES <<<<<<<<<
+
+DadosTemporada[numeroTemporada=1, episodios=[DadosEpisodio[Titulo=Unaired Original Pilot, numeroEpisodio=0, dataLancamento=N/A, avaliacao=N/A], DadosEpisodio[Titulo=Winter Is Coming, numeroEpisodio=1, dataLancamento=2011-04-17, avaliacao=8.9], DadosEpisodio[Titulo=The Kingsroad, numeroEpisodio=2, dataLancamento=2011-04-24, avaliacao=8.6], DadosEpisodio[Titulo=Lord Snow, numeroEpisodio=3, dataLancamento=2011-05-01, avaliacao=8.5], DadosEpisodio[Titulo=Cripples, Bastards, and Broken Things, numeroEpisodio=4, dataLancamento=2011-05-08, avaliacao=8.6], DadosEpisodio[Titulo=The Wolf and the Lion, numeroEpisodio=5, dataLancamento=2011-05-15, avaliacao=9.0], DadosEpisodio[Titulo=A Golden Crown, numeroEpisodio=6, dataLancamento=2011-05-22, avaliacao=N/A], DadosEpisodio[Titulo=You Win or You Die, numeroEpisodio=7, dataLancamento=2011-05-29, avaliacao=9.1], DadosEpisodio[Titulo=The Pointy End, numeroEpisodio=8, dataLancamento=2011-06-05, avaliacao=8.9], DadosEpisodio[Titulo=Baelor, numeroEpisodio=9, dataLancamento=2011-06-12, avaliacao=9.6], DadosEpisodio[Titulo=Fire and Blood, numeroEpisodio=10, dataLancamento=2011-06-19, avaliacao=9.4]]]
+DadosTemporada[numeroTemporada=2, episodios=[DadosEpisodio[Titulo=The North Remembers, numeroEpisodio=1, dataLancamento=2012-04-01, avaliacao=8.6], DadosEpisodio[Titulo=The Night Lands, numeroEpisodio=2, dataLancamento=2012-04-08, avaliacao=8.3], DadosEpisodio[Titulo=What Is Dead May Never Die, numeroEpisodio=3, dataLancamento=2012-04-15, avaliacao=8.7], DadosEpisodio[Titulo=Garden of Bones, numeroEpisodio=4, dataLancamento=2012-04-22, avaliacao=N/A], DadosEpisodio[Titulo=The Ghost of Harrenhal, numeroEpisodio=5, dataLancamento=2012-04-29, avaliacao=8.6], DadosEpisodio[Titulo=The Old Gods and the New, numeroEpisodio=6, dataLancamento=2012-05-06, avaliacao=8.9], DadosEpisodio[Titulo=A Man Without Honor, numeroEpisodio=7, dataLancamento=2012-05-13, avaliacao=8.8], DadosEpisodio[Titulo=The Prince of Winterfell, numeroEpisodio=8, dataLancamento=2012-05-20, avaliacao=8.6], DadosEpisodio[Titulo=Blackwater, numeroEpisodio=9, dataLancamento=2012-05-27, avaliacao=9.7], DadosEpisodio[Titulo=Valar Morghulis, numeroEpisodio=10, dataLancamento=2012-06-03, avaliacao=N/A]]]
+DadosTemporada[numeroTemporada=3, episodios=[DadosEpisodio[Titulo=Valar Dohaeris, numeroEpisodio=1, dataLancamento=2013-03-31, avaliacao=8.6], DadosEpisodio[Titulo=Dark Wings, Dark Words, numeroEpisodio=2, dataLancamento=2013-04-07, avaliacao=8.4], DadosEpisodio[Titulo=Walk of Punishment, numeroEpisodio=3, dataLancamento=2013-04-14, avaliacao=8.7], DadosEpisodio[Titulo=And Now His Watch Is Ended, numeroEpisodio=4, dataLancamento=2013-04-21, avaliacao=9.5], DadosEpisodio[Titulo=Kissed by Fire, numeroEpisodio=5, dataLancamento=2013-04-28, avaliacao=8.9], DadosEpisodio[Titulo=The Climb, numeroEpisodio=6, dataLancamento=2013-05-05, avaliacao=8.7], DadosEpisodio[Titulo=The Bear and the Maiden Fair, numeroEpisodio=7, dataLancamento=2013-05-12, avaliacao=8.6], DadosEpisodio[Titulo=Second Sons, numeroEpisodio=8, dataLancamento=2013-05-19, avaliacao=8.9], DadosEpisodio[Titulo=The Rains of Castamere, numeroEpisodio=9, dataLancamento=2013-06-02, avaliacao=9.9], DadosEpisodio[Titulo=Mhysa, numeroEpisodio=10, dataLancamento=2013-06-09, avaliacao=9.1]]]
+DadosTemporada[numeroTemporada=4, episodios=[DadosEpisodio[Titulo=Two Swords, numeroEpisodio=1, dataLancamento=2014-04-06, avaliacao=9.0], DadosEpisodio[Titulo=The Lion and the Rose, numeroEpisodio=2, dataLancamento=2014-04-13, avaliacao=9.7], DadosEpisodio[Titulo=Breaker of Chains, numeroEpisodio=3, dataLancamento=2014-04-20, avaliacao=8.7], DadosEpisodio[Titulo=Oathkeeper, numeroEpisodio=4, dataLancamento=2014-04-27, avaliacao=8.7], DadosEpisodio[Titulo=First of His Name, numeroEpisodio=5, dataLancamento=2014-05-04, avaliacao=8.6], DadosEpisodio[Titulo=The Laws of Gods and Men, numeroEpisodio=6, dataLancamento=2014-05-11, avaliacao=9.7], DadosEpisodio[Titulo=Mockingbird, numeroEpisodio=7, dataLancamento=2014-05-18, avaliacao=9.0], DadosEpisodio[Titulo=The Mountain and the Viper, numeroEpisodio=8, dataLancamento=2014-06-01, avaliacao=9.7], DadosEpisodio[Titulo=The Watchers on the Wall, numeroEpisodio=9, dataLancamento=2014-06-08, avaliacao=9.6], DadosEpisodio[Titulo=The Children, numeroEpisodio=10, dataLancamento=2014-06-15, avaliacao=9.6]]]
+DadosTemporada[numeroTemporada=5, episodios=[DadosEpisodio[Titulo=The Wars to Come, numeroEpisodio=1, dataLancamento=2015-04-12, avaliacao=8.3], DadosEpisodio[Titulo=The House of Black and White, numeroEpisodio=2, dataLancamento=2015-04-19, avaliacao=8.3], DadosEpisodio[Titulo=High Sparrow, numeroEpisodio=3, dataLancamento=2015-04-26, avaliacao=8.4], DadosEpisodio[Titulo=Sons of the Harpy, numeroEpisodio=4, dataLancamento=2015-05-03, avaliacao=8.5], DadosEpisodio[Titulo=Kill the Boy, numeroEpisodio=5, dataLancamento=2015-05-10, avaliacao=8.5], DadosEpisodio[Titulo=Unbowed, Unbent, Unbroken, numeroEpisodio=6, dataLancamento=2015-05-17, avaliacao=7.9], DadosEpisodio[Titulo=The Gift, numeroEpisodio=7, dataLancamento=2015-05-24, avaliacao=8.8], DadosEpisodio[Titulo=Hardhome, numeroEpisodio=8, dataLancamento=2015-05-31, avaliacao=9.8], DadosEpisodio[Titulo=The Dance of Dragons, numeroEpisodio=9, dataLancamento=2015-06-07, avaliacao=9.4], DadosEpisodio[Titulo=Mother's Mercy, numeroEpisodio=10, dataLancamento=2015-06-14, avaliacao=9.1]]]
+DadosTemporada[numeroTemporada=6, episodios=[DadosEpisodio[Titulo=The Red Woman, numeroEpisodio=1, dataLancamento=2016-04-24, avaliacao=8.4], DadosEpisodio[Titulo=Home, numeroEpisodio=2, dataLancamento=2016-05-01, avaliacao=9.2], DadosEpisodio[Titulo=Oathbreaker, numeroEpisodio=3, dataLancamento=2016-05-08, avaliacao=8.6], DadosEpisodio[Titulo=Book of the Stranger, numeroEpisodio=4, dataLancamento=2016-05-15, avaliacao=9.0], DadosEpisodio[Titulo=The Door, numeroEpisodio=5, dataLancamento=2016-05-22, avaliacao=9.7], DadosEpisodio[Titulo=Blood of My Blood, numeroEpisodio=6, dataLancamento=2016-05-29, avaliacao=8.3], DadosEpisodio[Titulo=The Broken Man, numeroEpisodio=7, dataLancamento=2016-06-05, avaliacao=8.5], DadosEpisodio[Titulo=No One, numeroEpisodio=8, dataLancamento=2016-06-12, avaliacao=8.3], DadosEpisodio[Titulo=Battle of the Bastards, numeroEpisodio=9, dataLancamento=2016-06-19, avaliacao=9.9], DadosEpisodio[Titulo=The Winds of Winter, numeroEpisodio=10, dataLancamento=2016-06-26, avaliacao=9.9]]]
+DadosTemporada[numeroTemporada=7, episodios=[DadosEpisodio[Titulo=Dragonstone, numeroEpisodio=1, dataLancamento=2017-07-16, avaliacao=8.5], DadosEpisodio[Titulo=Stormborn, numeroEpisodio=2, dataLancamento=2017-07-23, avaliacao=8.8], DadosEpisodio[Titulo=The Queen's Justice, numeroEpisodio=3, dataLancamento=2017-07-30, avaliacao=9.1], DadosEpisodio[Titulo=The Spoils of War, numeroEpisodio=4, dataLancamento=2017-08-06, avaliacao=9.7], DadosEpisodio[Titulo=Eastwatch, numeroEpisodio=5, dataLancamento=2017-08-13, avaliacao=8.7], DadosEpisodio[Titulo=Beyond the Wall, numeroEpisodio=6, dataLancamento=2017-08-20, avaliacao=9.0], DadosEpisodio[Titulo=The Dragon and the Wolf, numeroEpisodio=7, dataLancamento=2017-08-27, avaliacao=9.4]]]
+DadosTemporada[numeroTemporada=8, episodios=[DadosEpisodio[Titulo=Winterfell, numeroEpisodio=1, dataLancamento=2019-04-14, avaliacao=7.6], DadosEpisodio[Titulo=A Knight of the Seven Kingdoms, numeroEpisodio=2, dataLancamento=2019-04-21, avaliacao=7.9], DadosEpisodio[Titulo=The Long Night, numeroEpisodio=3, dataLancamento=2019-04-28, avaliacao=7.5], DadosEpisodio[Titulo=The Last of the Starks, numeroEpisodio=4, dataLancamento=2019-05-05, avaliacao=5.5], DadosEpisodio[Titulo=The Bells, numeroEpisodio=5, dataLancamento=2019-05-12, avaliacao=5.9], DadosEpisodio[Titulo=The Iron Throne, numeroEpisodio=6, dataLancamento=2019-05-19, avaliacao=4.0]]]
+
+
+>>>>>>>> OS EPISÓDIOS,E A TEMPORADA EM QUE ELES ESTÃO,DA SÉRIE GAME OF THRONES <<<<<<<<
+
+Episodio [numeroDaTemporada= 1, Titulo= Unaired Original Pilot, numeroEpisodio= 0, dataLancamento= null, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= Winter Is Coming, numeroEpisodio= 1, dataLancamento= 2011-04-17, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Kingsroad, numeroEpisodio= 2, dataLancamento= 2011-04-24, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 1, Titulo= Lord Snow, numeroEpisodio= 3, dataLancamento= 2011-05-01, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 1, Titulo= Cripples, Bastards, and Broken Things, numeroEpisodio= 4, dataLancamento= 2011-05-08, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Wolf and the Lion, numeroEpisodio= 5, dataLancamento= 2011-05-15, avaliacao= 9.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= A Golden Crown, numeroEpisodio= 6, dataLancamento= 2011-05-22, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= You Win or You Die, numeroEpisodio= 7, dataLancamento= 2011-05-29, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Pointy End, numeroEpisodio= 8, dataLancamento= 2011-06-05, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 1, Titulo= Baelor, numeroEpisodio= 9, dataLancamento= 2011-06-12, avaliacao= 9.6]
+
+Episodio [numeroDaTemporada= 1, Titulo= Fire and Blood, numeroEpisodio= 10, dataLancamento= 2011-06-19, avaliacao= 9.4]
+
+Episodio [numeroDaTemporada= 2, Titulo= The North Remembers, numeroEpisodio= 1, dataLancamento= 2012-04-01, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Night Lands, numeroEpisodio= 2, dataLancamento= 2012-04-08, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 2, Titulo= What Is Dead May Never Die, numeroEpisodio= 3, dataLancamento= 2012-04-15, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 2, Titulo= Garden of Bones, numeroEpisodio= 4, dataLancamento= 2012-04-22, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Ghost of Harrenhal, numeroEpisodio= 5, dataLancamento= 2012-04-29, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Old Gods and the New, numeroEpisodio= 6, dataLancamento= 2012-05-06, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 2, Titulo= A Man Without Honor, numeroEpisodio= 7, dataLancamento= 2012-05-13, avaliacao= 8.8]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Prince of Winterfell, numeroEpisodio= 8, dataLancamento= 2012-05-20, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 2, Titulo= Blackwater, numeroEpisodio= 9, dataLancamento= 2012-05-27, avaliacao= 9.7]
+
+Episodio [numeroDaTemporada= 2, Titulo= Valar Morghulis, numeroEpisodio= 10, dataLancamento= 2012-06-03, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Valar Dohaeris, numeroEpisodio= 1, dataLancamento= 2013-03-31, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 3, Titulo= Dark Wings, Dark Words, numeroEpisodio= 2, dataLancamento= 2013-04-07, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 3, Titulo= Walk of Punishment, numeroEpisodio= 3, dataLancamento= 2013-04-14, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 3, Titulo= And Now His Watch Is Ended, numeroEpisodio= 4, dataLancamento= 2013-04-21, avaliacao= 9.5]
+
+Episodio [numeroDaTemporada= 3, Titulo= Kissed by Fire, numeroEpisodio= 5, dataLancamento= 2013-04-28, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 3, Titulo= The Climb, numeroEpisodio= 6, dataLancamento= 2013-05-05, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 3, Titulo= The Bear and the Maiden Fair, numeroEpisodio= 7, dataLancamento= 2013-05-12, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 3, Titulo= Second Sons, numeroEpisodio= 8, dataLancamento= 2013-05-19, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 3, Titulo= The Rains of Castamere, numeroEpisodio= 9, dataLancamento= 2013-06-02, avaliacao= 9.9]
+
+Episodio [numeroDaTemporada= 3, Titulo= Mhysa, numeroEpisodio= 10, dataLancamento= 2013-06-09, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 4, Titulo= Two Swords, numeroEpisodio= 1, dataLancamento= 2014-04-06, avaliacao= 9.0]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Lion and the Rose, numeroEpisodio= 2, dataLancamento= 2014-04-13, avaliacao= 9.7]
+
+Episodio [numeroDaTemporada= 4, Titulo= Breaker of Chains, numeroEpisodio= 3, dataLancamento= 2014-04-20, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 4, Titulo= Oathkeeper, numeroEpisodio= 4, dataLancamento= 2014-04-27, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 4, Titulo= First of His Name, numeroEpisodio= 5, dataLancamento= 2014-05-04, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Laws of Gods and Men, numeroEpisodio= 6, dataLancamento= 2014-05-11, avaliacao= 9.7]
+
+Episodio [numeroDaTemporada= 4, Titulo= Mockingbird, numeroEpisodio= 7, dataLancamento= 2014-05-18, avaliacao= 9.0]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Mountain and the Viper, numeroEpisodio= 8, dataLancamento= 2014-06-01, avaliacao= 9.7]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Watchers on the Wall, numeroEpisodio= 9, dataLancamento= 2014-06-08, avaliacao= 9.6]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Children, numeroEpisodio= 10, dataLancamento= 2014-06-15, avaliacao= 9.6]
+
+Episodio [numeroDaTemporada= 5, Titulo= The Wars to Come, numeroEpisodio= 1, dataLancamento= 2015-04-12, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 5, Titulo= The House of Black and White, numeroEpisodio= 2, dataLancamento= 2015-04-19, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 5, Titulo= High Sparrow, numeroEpisodio= 3, dataLancamento= 2015-04-26, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 5, Titulo= Sons of the Harpy, numeroEpisodio= 4, dataLancamento= 2015-05-03, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 5, Titulo= Kill the Boy, numeroEpisodio= 5, dataLancamento= 2015-05-10, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 5, Titulo= Unbowed, Unbent, Unbroken, numeroEpisodio= 6, dataLancamento= 2015-05-17, avaliacao= 7.9]
+
+Episodio [numeroDaTemporada= 5, Titulo= The Gift, numeroEpisodio= 7, dataLancamento= 2015-05-24, avaliacao= 8.8]
+
+Episodio [numeroDaTemporada= 5, Titulo= Hardhome, numeroEpisodio= 8, dataLancamento= 2015-05-31, avaliacao= 9.8]
+
+Episodio [numeroDaTemporada= 5, Titulo= The Dance of Dragons, numeroEpisodio= 9, dataLancamento= 2015-06-07, avaliacao= 9.4]
+
+Episodio [numeroDaTemporada= 5, Titulo= Mother's Mercy, numeroEpisodio= 10, dataLancamento= 2015-06-14, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 6, Titulo= The Red Woman, numeroEpisodio= 1, dataLancamento= 2016-04-24, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 6, Titulo= Home, numeroEpisodio= 2, dataLancamento= 2016-05-01, avaliacao= 9.2]
+
+Episodio [numeroDaTemporada= 6, Titulo= Oathbreaker, numeroEpisodio= 3, dataLancamento= 2016-05-08, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 6, Titulo= Book of the Stranger, numeroEpisodio= 4, dataLancamento= 2016-05-15, avaliacao= 9.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= The Door, numeroEpisodio= 5, dataLancamento= 2016-05-22, avaliacao= 9.7]
+
+Episodio [numeroDaTemporada= 6, Titulo= Blood of My Blood, numeroEpisodio= 6, dataLancamento= 2016-05-29, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 6, Titulo= The Broken Man, numeroEpisodio= 7, dataLancamento= 2016-06-05, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 6, Titulo= No One, numeroEpisodio= 8, dataLancamento= 2016-06-12, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 6, Titulo= Battle of the Bastards, numeroEpisodio= 9, dataLancamento= 2016-06-19, avaliacao= 9.9]
+
+Episodio [numeroDaTemporada= 6, Titulo= The Winds of Winter, numeroEpisodio= 10, dataLancamento= 2016-06-26, avaliacao= 9.9]
+
+Episodio [numeroDaTemporada= 7, Titulo= Dragonstone, numeroEpisodio= 1, dataLancamento= 2017-07-16, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 7, Titulo= Stormborn, numeroEpisodio= 2, dataLancamento= 2017-07-23, avaliacao= 8.8]
+
+Episodio [numeroDaTemporada= 7, Titulo= The Queen's Justice, numeroEpisodio= 3, dataLancamento= 2017-07-30, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 7, Titulo= The Spoils of War, numeroEpisodio= 4, dataLancamento= 2017-08-06, avaliacao= 9.7]
+
+Episodio [numeroDaTemporada= 7, Titulo= Eastwatch, numeroEpisodio= 5, dataLancamento= 2017-08-13, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 7, Titulo= Beyond the Wall, numeroEpisodio= 6, dataLancamento= 2017-08-20, avaliacao= 9.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= The Dragon and the Wolf, numeroEpisodio= 7, dataLancamento= 2017-08-27, avaliacao= 9.4]
+
+Episodio [numeroDaTemporada= 8, Titulo= Winterfell, numeroEpisodio= 1, dataLancamento= 2019-04-14, avaliacao= 7.6]
+
+Episodio [numeroDaTemporada= 8, Titulo= A Knight of the Seven Kingdoms, numeroEpisodio= 2, dataLancamento= 2019-04-21, avaliacao= 7.9]
+
+Episodio [numeroDaTemporada= 8, Titulo= The Long Night, numeroEpisodio= 3, dataLancamento= 2019-04-28, avaliacao= 7.5]
+
+Episodio [numeroDaTemporada= 8, Titulo= The Last of the Starks, numeroEpisodio= 4, dataLancamento= 2019-05-05, avaliacao= 5.5]
+
+Episodio [numeroDaTemporada= 8, Titulo= The Bells, numeroEpisodio= 5, dataLancamento= 2019-05-12, avaliacao= 5.9]
+
+Episodio [numeroDaTemporada= 8, Titulo= The Iron Throne, numeroEpisodio= 6, dataLancamento= 2019-05-19, avaliacao= 4.0]
+
+
+>>>>>>>> OS CINCOS MELHORES EPISÓDIOS,DE TODAS TEMPORADAS DA SÉRIE GAME OF THRONES <<<<<<<<
+
+java.util.stream.SliceOps$1@6fa69af7
+
+Episodio [numeroDaTemporada= 3, Titulo= The Rains of Castamere, numeroEpisodio= 9, dataLancamento= 2013-06-02, avaliacao= 9.9]
+
+Episodio [numeroDaTemporada= 6, Titulo= Battle of the Bastards, numeroEpisodio= 9, dataLancamento= 2016-06-19, avaliacao= 9.9]
+
+Episodio [numeroDaTemporada= 6, Titulo= The Winds of Winter, numeroEpisodio= 10, dataLancamento= 2016-06-26, avaliacao= 9.9]
+
+Episodio [numeroDaTemporada= 5, Titulo= Hardhome, numeroEpisodio= 8, dataLancamento= 2015-05-31, avaliacao= 9.8]
+
+Episodio [numeroDaTemporada= 2, Titulo= Blackwater, numeroEpisodio= 9, dataLancamento= 2012-05-27, avaliacao= 9.7]
+
+
+>>>>>>>> OS CINCOS MELHORES EPISÓDIOS,DE TODAS TEMPORADAS DA SÉRIE GAME OF THRONES <<<<<<<<
+
+DadosEpisodio[Titulo=The Rains of Castamere, numeroEpisodio=9, dataLancamento=2013-06-02, avaliacao=9.9]
+DadosEpisodio[Titulo=Battle of the Bastards, numeroEpisodio=9, dataLancamento=2016-06-19, avaliacao=9.9]
+DadosEpisodio[Titulo=The Winds of Winter, numeroEpisodio=10, dataLancamento=2016-06-26, avaliacao=9.9]
+DadosEpisodio[Titulo=Hardhome, numeroEpisodio=8, dataLancamento=2015-05-31, avaliacao=9.8]
+DadosEpisodio[Titulo=Blackwater, numeroEpisodio=9, dataLancamento=2012-05-27, avaliacao=9.7]
+
+ENTRE COM O ANO DA SÉRIE QUE VOCÊ QUER: 
+2001
+
+DATA ENTRADA: 2001-01-01
+
+Episodio [numeroDaTemporada= 1, Titulo= Winter Is Coming, numeroEpisodio= 1, dataLancamento= 2011-04-17, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Kingsroad, numeroEpisodio= 2, dataLancamento= 2011-04-24, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 1, Titulo= Lord Snow, numeroEpisodio= 3, dataLancamento= 2011-05-01, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 1, Titulo= Cripples, Bastards, and Broken Things, numeroEpisodio= 4, dataLancamento= 2011-05-08, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Wolf and the Lion, numeroEpisodio= 5, dataLancamento= 2011-05-15, avaliacao= 9.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= A Golden Crown, numeroEpisodio= 6, dataLancamento= 2011-05-22, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 1, Titulo= You Win or You Die, numeroEpisodio= 7, dataLancamento= 2011-05-29, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 1, Titulo= The Pointy End, numeroEpisodio= 8, dataLancamento= 2011-06-05, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 1, Titulo= Baelor, numeroEpisodio= 9, dataLancamento= 2011-06-12, avaliacao= 9.6]
+
+Episodio [numeroDaTemporada= 1, Titulo= Fire and Blood, numeroEpisodio= 10, dataLancamento= 2011-06-19, avaliacao= 9.4]
+
+Episodio [numeroDaTemporada= 2, Titulo= The North Remembers, numeroEpisodio= 1, dataLancamento= 2012-04-01, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Night Lands, numeroEpisodio= 2, dataLancamento= 2012-04-08, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 2, Titulo= What Is Dead May Never Die, numeroEpisodio= 3, dataLancamento= 2012-04-15, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 2, Titulo= Garden of Bones, numeroEpisodio= 4, dataLancamento= 2012-04-22, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Ghost of Harrenhal, numeroEpisodio= 5, dataLancamento= 2012-04-29, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Old Gods and the New, numeroEpisodio= 6, dataLancamento= 2012-05-06, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 2, Titulo= A Man Without Honor, numeroEpisodio= 7, dataLancamento= 2012-05-13, avaliacao= 8.8]
+
+Episodio [numeroDaTemporada= 2, Titulo= The Prince of Winterfell, numeroEpisodio= 8, dataLancamento= 2012-05-20, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 2, Titulo= Blackwater, numeroEpisodio= 9, dataLancamento= 2012-05-27, avaliacao= 9.7]
+
+Episodio [numeroDaTemporada= 2, Titulo= Valar Morghulis, numeroEpisodio= 10, dataLancamento= 2012-06-03, avaliacao= 0.0]
+
+Episodio [numeroDaTemporada= 3, Titulo= Valar Dohaeris, numeroEpisodio= 1, dataLancamento= 2013-03-31, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 3, Titulo= Dark Wings, Dark Words, numeroEpisodio= 2, dataLancamento= 2013-04-07, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 3, Titulo= Walk of Punishment, numeroEpisodio= 3, dataLancamento= 2013-04-14, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 3, Titulo= And Now His Watch Is Ended, numeroEpisodio= 4, dataLancamento= 2013-04-21, avaliacao= 9.5]
+
+Episodio [numeroDaTemporada= 3, Titulo= Kissed by Fire, numeroEpisodio= 5, dataLancamento= 2013-04-28, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 3, Titulo= The Climb, numeroEpisodio= 6, dataLancamento= 2013-05-05, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 3, Titulo= The Bear and the Maiden Fair, numeroEpisodio= 7, dataLancamento= 2013-05-12, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 3, Titulo= Second Sons, numeroEpisodio= 8, dataLancamento= 2013-05-19, avaliacao= 8.9]
+
+Episodio [numeroDaTemporada= 3, Titulo= The Rains of Castamere, numeroEpisodio= 9, dataLancamento= 2013-06-02, avaliacao= 9.9]
+
+Episodio [numeroDaTemporada= 3, Titulo= Mhysa, numeroEpisodio= 10, dataLancamento= 2013-06-09, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 4, Titulo= Two Swords, numeroEpisodio= 1, dataLancamento= 2014-04-06, avaliacao= 9.0]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Lion and the Rose, numeroEpisodio= 2, dataLancamento= 2014-04-13, avaliacao= 9.7]
+
+Episodio [numeroDaTemporada= 4, Titulo= Breaker of Chains, numeroEpisodio= 3, dataLancamento= 2014-04-20, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 4, Titulo= Oathkeeper, numeroEpisodio= 4, dataLancamento= 2014-04-27, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 4, Titulo= First of His Name, numeroEpisodio= 5, dataLancamento= 2014-05-04, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Laws of Gods and Men, numeroEpisodio= 6, dataLancamento= 2014-05-11, avaliacao= 9.7]
+
+Episodio [numeroDaTemporada= 4, Titulo= Mockingbird, numeroEpisodio= 7, dataLancamento= 2014-05-18, avaliacao= 9.0]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Mountain and the Viper, numeroEpisodio= 8, dataLancamento= 2014-06-01, avaliacao= 9.7]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Watchers on the Wall, numeroEpisodio= 9, dataLancamento= 2014-06-08, avaliacao= 9.6]
+
+Episodio [numeroDaTemporada= 4, Titulo= The Children, numeroEpisodio= 10, dataLancamento= 2014-06-15, avaliacao= 9.6]
+
+Episodio [numeroDaTemporada= 5, Titulo= The Wars to Come, numeroEpisodio= 1, dataLancamento= 2015-04-12, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 5, Titulo= The House of Black and White, numeroEpisodio= 2, dataLancamento= 2015-04-19, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 5, Titulo= High Sparrow, numeroEpisodio= 3, dataLancamento= 2015-04-26, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 5, Titulo= Sons of the Harpy, numeroEpisodio= 4, dataLancamento= 2015-05-03, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 5, Titulo= Kill the Boy, numeroEpisodio= 5, dataLancamento= 2015-05-10, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 5, Titulo= Unbowed, Unbent, Unbroken, numeroEpisodio= 6, dataLancamento= 2015-05-17, avaliacao= 7.9]
+
+Episodio [numeroDaTemporada= 5, Titulo= The Gift, numeroEpisodio= 7, dataLancamento= 2015-05-24, avaliacao= 8.8]
+
+Episodio [numeroDaTemporada= 5, Titulo= Hardhome, numeroEpisodio= 8, dataLancamento= 2015-05-31, avaliacao= 9.8]
+
+Episodio [numeroDaTemporada= 5, Titulo= The Dance of Dragons, numeroEpisodio= 9, dataLancamento= 2015-06-07, avaliacao= 9.4]
+
+Episodio [numeroDaTemporada= 5, Titulo= Mother's Mercy, numeroEpisodio= 10, dataLancamento= 2015-06-14, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 6, Titulo= The Red Woman, numeroEpisodio= 1, dataLancamento= 2016-04-24, avaliacao= 8.4]
+
+Episodio [numeroDaTemporada= 6, Titulo= Home, numeroEpisodio= 2, dataLancamento= 2016-05-01, avaliacao= 9.2]
+
+Episodio [numeroDaTemporada= 6, Titulo= Oathbreaker, numeroEpisodio= 3, dataLancamento= 2016-05-08, avaliacao= 8.6]
+
+Episodio [numeroDaTemporada= 6, Titulo= Book of the Stranger, numeroEpisodio= 4, dataLancamento= 2016-05-15, avaliacao= 9.0]
+
+Episodio [numeroDaTemporada= 6, Titulo= The Door, numeroEpisodio= 5, dataLancamento= 2016-05-22, avaliacao= 9.7]
+
+Episodio [numeroDaTemporada= 6, Titulo= Blood of My Blood, numeroEpisodio= 6, dataLancamento= 2016-05-29, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 6, Titulo= The Broken Man, numeroEpisodio= 7, dataLancamento= 2016-06-05, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 6, Titulo= No One, numeroEpisodio= 8, dataLancamento= 2016-06-12, avaliacao= 8.3]
+
+Episodio [numeroDaTemporada= 6, Titulo= Battle of the Bastards, numeroEpisodio= 9, dataLancamento= 2016-06-19, avaliacao= 9.9]
+
+Episodio [numeroDaTemporada= 6, Titulo= The Winds of Winter, numeroEpisodio= 10, dataLancamento= 2016-06-26, avaliacao= 9.9]
+
+Episodio [numeroDaTemporada= 7, Titulo= Dragonstone, numeroEpisodio= 1, dataLancamento= 2017-07-16, avaliacao= 8.5]
+
+Episodio [numeroDaTemporada= 7, Titulo= Stormborn, numeroEpisodio= 2, dataLancamento= 2017-07-23, avaliacao= 8.8]
+
+Episodio [numeroDaTemporada= 7, Titulo= The Queen's Justice, numeroEpisodio= 3, dataLancamento= 2017-07-30, avaliacao= 9.1]
+
+Episodio [numeroDaTemporada= 7, Titulo= The Spoils of War, numeroEpisodio= 4, dataLancamento= 2017-08-06, avaliacao= 9.7]
+
+Episodio [numeroDaTemporada= 7, Titulo= Eastwatch, numeroEpisodio= 5, dataLancamento= 2017-08-13, avaliacao= 8.7]
+
+Episodio [numeroDaTemporada= 7, Titulo= Beyond the Wall, numeroEpisodio= 6, dataLancamento= 2017-08-20, avaliacao= 9.0]
+
+Episodio [numeroDaTemporada= 7, Titulo= The Dragon and the Wolf, numeroEpisodio= 7, dataLancamento= 2017-08-27, avaliacao= 9.4]
+
+Episodio [numeroDaTemporada= 8, Titulo= Winterfell, numeroEpisodio= 1, dataLancamento= 2019-04-14, avaliacao= 7.6]
+
+Episodio [numeroDaTemporada= 8, Titulo= A Knight of the Seven Kingdoms, numeroEpisodio= 2, dataLancamento= 2019-04-21, avaliacao= 7.9]
+
+Episodio [numeroDaTemporada= 8, Titulo= The Long Night, numeroEpisodio= 3, dataLancamento= 2019-04-28, avaliacao= 7.5]
+
+Episodio [numeroDaTemporada= 8, Titulo= The Last of the Starks, numeroEpisodio= 4, dataLancamento= 2019-05-05, avaliacao= 5.5]
+
+Episodio [numeroDaTemporada= 8, Titulo= The Bells, numeroEpisodio= 5, dataLancamento= 2019-05-12, avaliacao= 5.9]
+
+Episodio [numeroDaTemporada= 8, Titulo= The Iron Throne, numeroEpisodio= 6, dataLancamento= 2019-05-19, avaliacao= 4.0]
+
+
+ENTRE COM O TÍTULO DO EPISÓDIO: 
+i
+
+TITULO ENCONTRADO: Optional[Episodio [numeroDaTemporada= 1, Titulo= Unaired Original Pilot, numeroEpisodio= 0, dataLancamento= null, avaliacao= 0.0]
+]
+
+>>>>>>>>>>>>>>>>>>> MÉDIA DA AVALIAÇÃO DAS TEMPORADAS <<<<<<<<<<<<<<<<<<<<
+
+{1=8.9556, 2=8.775, 3=8.93, 4=9.23, 5=8.7, 6=8.98, 7=9.0286, 8=6.4}
+
+>>>>>>>>>>>>>>>>>>> ESTATÍSTICAS <<<<<<<<<<<<<<<<<<<<
+
+DoubleSummaryStatistics{count=70, sum=610,800000, min=4,000000, average=8,725714, max=9,900000}
+
+ QUANTIDADE: 70
+
+ MÍNIMO: 4,000
+
+ MÁXIMO: 9,900
+
+ MÉDIA: 8,726
