@@ -1,0 +1,63 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2024-11-02T10:33:22.666-03:00  INFO 4880 --- [           main] c.a.screenmatch.ScreenmatchApplication   : Starting ScreenmatchApplication using Java 23.0.1 with PID 4880 (C:\GitHubjavabin7777777\PROJETOS-ORACLE-ONE-ALURA\screenmatch-springboot-github\screenmatch_git\target\classes started by Jupiter in C:\GitHubjavabin7777777\PROJETOS-ORACLE-ONE-ALURA\screenmatch-springboot-github\screenmatch_git)
+2024-11-02T10:33:22.687-03:00  INFO 4880 --- [           main] c.a.screenmatch.ScreenmatchApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-02T10:33:27.158-03:00  INFO 4880 --- [           main] c.a.screenmatch.ScreenmatchApplication   : Started ScreenmatchApplication in 6.585 seconds (process running for 8.805)
+Entre com a sua opção
+
+1.DADOS DA SÉRIE
+2.DADOS DOS EPISÓDIOS
+0.SAIR
+
+1
+Entre com o nome da série: 
+euphoria
+
+DADOS DA SÉRIE euphoria
+DadosDaSerie[Titulo=Euphoria, Avaliacao=8.3, totalTemporadas=3]
+
+Entre com a sua opção
+
+1.DADOS DA SÉRIE
+2.DADOS DOS EPISÓDIOS
+0.SAIR
+
+2
+Entre com o nome da série: 
+euphoria
+
+DADOS DOS EPISÓDIOS DA SÉRIE euphoria
+[Episodio [numeroDaTemporada= 1, Titulo= Pilot, numeroEpisodio= 1, dataLancamento= 2019-06-16, avaliacao= 8.1]
+, Episodio [numeroDaTemporada= 1, Titulo= Stuntin' Like My Daddy, numeroEpisodio= 2, dataLancamento= 2019-06-23, avaliacao= 8.1]
+, Episodio [numeroDaTemporada= 1, Titulo= Made You Look, numeroEpisodio= 3, dataLancamento= 2019-06-30, avaliacao= 8.3]
+, Episodio [numeroDaTemporada= 1, Titulo= Shook Ones Pt II, numeroEpisodio= 4, dataLancamento= 2019-07-07, avaliacao= 9.0]
+, Episodio [numeroDaTemporada= 1, Titulo= '03 Bonnie and Clyde, numeroEpisodio= 5, dataLancamento= 2019-07-14, avaliacao= 8.0]
+, Episodio [numeroDaTemporada= 1, Titulo= The Next Episode, numeroEpisodio= 6, dataLancamento= 2019-07-21, avaliacao= 8.1]
+, Episodio [numeroDaTemporada= 1, Titulo= The Trials and Tribulations of Trying to Pee While Depressed, numeroEpisodio= 7, dataLancamento= 2019-07-28, avaliacao= 8.4]
+, Episodio [numeroDaTemporada= 1, Titulo= And Salt the Earth Behind You, numeroEpisodio= 8, dataLancamento= 2019-08-04, avaliacao= 8.2]
+, Episodio [numeroDaTemporada= 2, Titulo= Trying to Get to Heaven Before They Close the Door, numeroEpisodio= 1, dataLancamento= 2022-01-09, avaliacao= 9.1]
+, Episodio [numeroDaTemporada= 2, Titulo= Out of Touch, numeroEpisodio= 2, dataLancamento= 2022-01-16, avaliacao= 8.0]
+, Episodio [numeroDaTemporada= 2, Titulo= Ruminations: Big and Little Bullys, numeroEpisodio= 3, dataLancamento= 2022-01-23, avaliacao= 8.5]
+, Episodio [numeroDaTemporada= 2, Titulo= You Who Cannot See, Think of Those Who Can, numeroEpisodio= 4, dataLancamento= 2022-01-30, avaliacao= 8.4]
+, Episodio [numeroDaTemporada= 2, Titulo= Stand Still Like the Hummingbird, numeroEpisodio= 5, dataLancamento= 2022-02-06, avaliacao= 9.5]
+, Episodio [numeroDaTemporada= 2, Titulo= A Thousand Little Trees of Blood, numeroEpisodio= 6, dataLancamento= 2022-02-13, avaliacao= 8.3]
+, Episodio [numeroDaTemporada= 2, Titulo= The Theater and Its Double, numeroEpisodio= 7, dataLancamento= 2022-02-20, avaliacao= 8.9]
+, Episodio [numeroDaTemporada= 2, Titulo= All My Life, My Heart Has Yearned for a Thing I Cannot Name, numeroEpisodio= 8, dataLancamento= 2022-02-27, avaliacao= 8.3]
+, Episodio [numeroDaTemporada= 3, Titulo= Episode #3.1, numeroEpisodio= 1, dataLancamento= null, avaliacao= 0.0]
+]
+
+Entre com a sua opção
+
+1.DADOS DA SÉRIE
+2.DADOS DOS EPISÓDIOS
+0.SAIR
+
+0

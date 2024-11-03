@@ -23,36 +23,40 @@ public class ScreenmatchApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Scanner ler = new Scanner(System.in);
-		DecimalFormat f = new DecimalFormat("##.000");
-		System.out.println("\n\n>>>>>>>>>>>> projeto screenmath - séries do omdb <<<<<<<<<<<\n\n".toUpperCase());
-		System.out.println("Entre com nome da série que você quer: ".toUpperCase());
-		String nomeDaSerie = ler.nextLine();
 		var consultaApi = new ConsultarApi();
 		FiltrarDados filtro = new FiltrarDados();
-		List<Episodio> listaDeEpisodios = ItensUteis.buscarEpisodios(nomeDaSerie, filtro, consultaApi);		
-		System.out.println("\nEntre com o ano da série que você quer: ".toUpperCase());
-		int ano = ler.nextInt();
-		ler.nextLine();
-		ItensUteis.buscarEpisodiosPorDataLancamento(ano, listaDeEpisodios ).forEach(System.out::println);
-		System.out.println("\nEntre com o título do episódio: ".toUpperCase());
-		var titulo = ler.nextLine();
-		ItensUteis.encontrarEpisodio(listaDeEpisodios, titulo);
-		System.out.println("\n>>>>>>>>>>>>>>>>>>> média da avaliação das temporadas <<<<<<<<<<<<<<<<<<<<\n".toUpperCase());
-		System.out.println(ItensUteis.obterMediaDaAvaliacaoDeCadaTemporada(listaDeEpisodios));
-		System.out.println("\n>>>>>>>>>>>>>>>>>>> estatísticas <<<<<<<<<<<<<<<<<<<<\n".toUpperCase());
-		System.out.println(ItensUteis.obterEstatisticas(listaDeEpisodios));
-		DoubleSummaryStatistics estatisticas = ItensUteis.obterEstatisticas(listaDeEpisodios);
-		System.out.println("\n quantidade: ".toUpperCase()+ estatisticas.getCount());
-		System.out.println("\n mínimo: ".toUpperCase()+ f.format(estatisticas.getMin()));
-		System.out.println("\n máximo: ".toUpperCase()+ f.format(estatisticas.getMax()));
-		System.out.println("\n média: ".toUpperCase()+ f.format(estatisticas.getAverage()));
-		ler.close();		
+		ItensUteis.exibirMenu(filtro, consultaApi);
 	}
-
 }
 
+/*
+Scanner ler = new Scanner(System.in);
+DecimalFormat f = new DecimalFormat("##.000");
+System.out.println("\n\n>>>>>>>>>>>> projeto screenmath - séries do omdb <<<<<<<<<<<\n\n".toUpperCase());
+System.out.println("Entre com nome da série que você quer: ".toUpperCase());
+String nomeDaSerie = ler.nextLine();
+var consultaApi = new ConsultarApi();
+FiltrarDados filtro = new FiltrarDados();
+List<Episodio> listaDeEpisodios = ItensUteis.buscarEpisodios(nomeDaSerie, filtro, consultaApi);		
+System.out.println("\nEntre com o ano da série que você quer: ".toUpperCase());
+int ano = ler.nextInt();
+ler.nextLine();
+ItensUteis.buscarEpisodiosPorDataLancamento(ano, listaDeEpisodios ).forEach(System.out::println);
+System.out.println("\nEntre com o título do episódio: ".toUpperCase());
+var titulo = ler.nextLine();
+ItensUteis.encontrarEpisodio(listaDeEpisodios, titulo);
+System.out.println("\n>>>>>>>>>>>>>>>>>>> média da avaliação das temporadas <<<<<<<<<<<<<<<<<<<<\n".toUpperCase());
+System.out.println(ItensUteis.obterMediaDaAvaliacaoDeCadaTemporada(listaDeEpisodios));
+System.out.println("\n>>>>>>>>>>>>>>>>>>> estatísticas <<<<<<<<<<<<<<<<<<<<\n".toUpperCase());
+System.out.println(ItensUteis.obterEstatisticas(listaDeEpisodios));
+DoubleSummaryStatistics estatisticas = ItensUteis.obterEstatisticas(listaDeEpisodios);
+System.out.println("\n quantidade: ".toUpperCase()+ estatisticas.getCount());
+System.out.println("\n mínimo: ".toUpperCase()+ f.format(estatisticas.getMin()));
+System.out.println("\n máximo: ".toUpperCase()+ f.format(estatisticas.getMax()));
+System.out.println("\n média: ".toUpperCase()+ f.format(estatisticas.getAverage()));
+ler.close();
 
+*/
 /*
  * DadosDaSerie dadosSerie = converter.obterDados(str, DadosDaSerie.class);
  * String str="";
