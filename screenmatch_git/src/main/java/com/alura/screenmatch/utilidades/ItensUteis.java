@@ -24,7 +24,7 @@ import com.alura.screenmatch.servico.FiltrarDados;
 
 public class ItensUteis {
 	private static final String end_1 = "https://www.omdbapi.com/?t=";
-	private static final String end_2 = "&apikey=7b2e19101f";
+	private static final String end_2 = "&apikey=7b2e191f";
 	private static final String end_3 = "&season=";
 	private static List<DadosTemporada> temporadas;
 	private static DadosDaSerie dadosSerie; // tipo record .
@@ -139,7 +139,7 @@ public class ItensUteis {
 		//System.out.println(serie+"\n");
 		serie.stream()
 		.sorted(Comparator.comparing(Serie::getGenero))
-		.forEach(System.out::println);;
+		.forEach(System.out::println);
 	
 		/*		
 		System.out.println(serie.stream()
@@ -263,8 +263,8 @@ public class ItensUteis {
 	
 
 /*
- * collect(Collectors.toList()) -> cria uma lista mutável toList() -> cria uma
- * lista imutável.
+ * collect(Collectors.toList()) -> cria uma lista mutável 
+ * toList() -> cria uma lista imutável.
  * 
  * System.out.println("\n>>>>>>>> episódios,de todas temporadas da série "
  * .toUpperCase() + strAux.toUpperCase() + " <<<<<<<<\n"); Obter lista de

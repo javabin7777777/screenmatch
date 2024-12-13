@@ -1,16 +1,32 @@
 package com.alura.screenmatch;
 
+import java.text.DecimalFormat;
+import java.util.DoubleSummaryStatistics;
+import java.util.List;
+import java.util.Scanner;
+
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RestController;
 
+import com.alura.screenmatch.model.Episodio;
+import com.alura.screenmatch.servico.ConsultarApi;
+import com.alura.screenmatch.servico.FiltrarDados;
+import com.alura.screenmatch.utilidades.ItensUteis;
 
 @SpringBootApplication
-public class ScreenmatchApplicationApiRest {
+public class ScreenmatchApplicationConsumidorDeApi implements CommandLineRunner {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ScreenmatchApplicationApiRest.class, args);
-	}	
+		SpringApplication.run(ScreenmatchApplicationConsumidorDeApi.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		var consultaApi = new ConsultarApi();
+		FiltrarDados filtro = new FiltrarDados();
+		ItensUteis.exibirMenu(filtro, consultaApi);
+	}
 }
 
 /*

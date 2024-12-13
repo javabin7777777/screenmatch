@@ -26,7 +26,8 @@ public class Serie {
 		this.totalTemporadas = dadosSerie.totalTemporadas();
 		
 		try {
-			this.anoLancamento = LocalDate.parse(dadosSerie.anoLancamento());			
+			this.anoLancamento = LocalDate.parse(dadosSerie.anoLancamento());
+			System.out.println(">>>>>>> "+this.anoLancamento);
 		} catch (DateTimeParseException ex) {
 			this.anoLancamento = null;
 		}
